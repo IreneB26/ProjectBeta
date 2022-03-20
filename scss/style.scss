@@ -1,6 +1,7 @@
 @import "_variables.scss";
 @import "_header.scss";
 @import "_tipografia.scss";
+@import "_card.scss";
 
 *,
 *:before,
@@ -12,6 +13,10 @@
 
 body {
   margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 // seccion 1 -------------
@@ -126,5 +131,43 @@ input:focus {
 
   .form_submit {
     width: 20%;
+  }
+}
+
+// section 3--------------------
+
+.section3 {
+  margin-top: 100px;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display_card {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display_category {
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .section3 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .display_card {
+    align-items: center;
+    justify-content: center;
   }
 }

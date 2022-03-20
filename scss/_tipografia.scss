@@ -7,19 +7,44 @@ a {
 }
 
 p {
-  font: solid 20px $texto;
+  font: normal 20px $texto;
 }
 
 .form_search::placeholder {
-  font: solid 20px $texto;
+  font: normal 20px $texto;
 }
 
 .form_submit {
-  font: solid 20px $texto;
+  font: normal 20px $texto;
+}
+
+// forms cards
+.input_card {
+  font: normal 16px $texto;
+
+  &::placeholder {
+    font: normal 16px $texto;
+  }
+}
+
+.submit_card {
+  font: normal 16px $texto;
 }
 
 @media (max-width: 768px) {
   h1 {
     font: bold 40px $titulos;
+  }
+
+  .content_header {
+    font: normal 16px $texto;
+  }
+
+  .form_search::placeholder {
+    font: normal 16px $texto;
+  }
+
+  .form_submit {
+    font: normal 16px $texto;
   }
 }

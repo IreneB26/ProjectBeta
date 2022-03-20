@@ -1,0 +1,133 @@
+@import "_variables.scss";
+
+.header {
+  width: 100%;
+  height: 80px;
+  top: 0;
+  position: absolute;
+  // z-index: -2;
+
+  // header shrinks when .small added to .header
+  &.small {
+    // when header.small change logo pad & font size
+    .nav {
+      background-color: $color_principal;
+      height: 80px;
+    }
+  }
+}
+
+// menu nav menu
+.nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.nav-toggle {
+  color: $secundario;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  line-height: 80px;
+}
+
+.nav-menu-item {
+  list-style: none;
+}
+
+.nav-menu-link {
+  text-decoration: none;
+  color: $secundario;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+// media query mobile
+@media (max-width: 768px) {
+  .header {
+    &.small {
+      .nav {
+        height: 70px;
+      }
+    }
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding: 0 30px;
+    line-height: 60px;
+  }
+
+  .logo_mobile {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    display: block;
+  }
+
+  .img_logo {
+    display: none;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+    background-color: $color_principal;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    // transicion menu despues(ya abieta)
+    left: 100%;
+    transition: left 0.9s;
+    z-index: 2;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link {
+    color: $secundario;
+    writing-mode: horizontal-tb;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link-active {
+    background: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    // transicion menu antes de abrir
+    left: 0;
+  }
+}

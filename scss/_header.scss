@@ -52,10 +52,18 @@
 .nav-menu-link {
   text-decoration: none;
   color: $secundario;
+  padding: 10px;
 }
 
 .nav-toggle {
   display: none;
+}
+
+// animacion linea bajo menu
+
+.nav-menu-link:hover {
+  background-color: $text_grey;
+  border-radius: 10px;
 }
 
 // media query mobile
@@ -114,7 +122,6 @@
 
   .nav-menu-link {
     color: $secundario;
-    writing-mode: horizontal-tb;
   }
 
   .nav-menu-link:hover,

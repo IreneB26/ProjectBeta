@@ -3,7 +3,7 @@ include('components-php/header.php');
 ?>
 
 <body>
-
+    <!-- ------------------------------- -->
     <section class="section1">
 
         <article class="header_article">
@@ -17,6 +17,22 @@ include('components-php/header.php');
 
 
     </section>
+
+    <!-- -------------------------- -->
+
+    <section class="section2">
+        <h1>Busca tu evento</h1>
+
+        <form class="busqueda" action="" methop="post">
+
+            <input class="form_search" type="text" name="busqueda" placeholder="Busca tu evento">
+            <input class="form_submit" type="submit" name="enviar">
+
+        </form>
+
+    </section>
+
+    <!-- ----------------------------- -->
 
 
     <?php

@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <script defer src="./js/index.js"></script>
   <script src="https://kit.fontawesome.com/97ca824fd3.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
   <title>Ticket 2 you</title>
 </head>
 

@@ -144,6 +144,32 @@
   }
 }
 
+h1 {
+  font: bold 60px "Poppins", sans-serif;
+}
+
+a {
+  font: bold 20px "Poppins", sans-serif;
+}
+
+p {
+  font: solid 20px "Halant", serif;
+}
+
+.form_search::placeholder {
+  font: solid 20px "Halant", serif;
+}
+
+.form_submit {
+  font: solid 20px "Halant", serif;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font: bold 40px "Poppins", sans-serif;
+  }
+}
+
 *,
 *:before,
 *:after {

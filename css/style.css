@@ -202,6 +202,30 @@ p {
   align-items: center;
   justify-content: flex-start;
   border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.bg_card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bg_card:hover {
+  cursor: pointer;
+  transform: scale(1.03, 1.03);
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.bg_card:hover::after {
+  opacity: 1;
 }
 
 .inf_card {
@@ -280,6 +304,10 @@ p {
     margin-left: 0px;
     margin-top: 30px;
   }
+}
+
+.footer {
+  margin-top: 100px;
 }
 
 *,

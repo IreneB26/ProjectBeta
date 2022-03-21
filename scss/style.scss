@@ -4,6 +4,7 @@
 @import "_card.scss";
 @import "_footer.scss";
 @import "_popup.scss";
+@import "_desplegable.scss";
 
 *,
 *:before,
@@ -35,10 +36,10 @@ body {
   z-index: 2;
   height: 50vh;
   width: 50vw;
-  background-image: url("../imagenes/concert.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-image: url("../imagenes/concert.jpg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
 }
 
 .header_article {
@@ -172,4 +173,25 @@ input:focus {
     align-items: center;
     justify-content: center;
   }
+}
+
+// ----------- section 4
+
+.section4 {
+  margin-top: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.container__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

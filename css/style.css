@@ -1,3 +1,4 @@
+/* line 3, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .header {
   width: 100%;
   height: 80px;
@@ -5,6 +6,7 @@
   position: absolute;
 }
 
+/* line 21, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav {
   width: 100%;
   height: 80px;
@@ -16,6 +18,7 @@
   background-color: #004173;
 }
 
+/* line 32, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-toggle {
   color: #0cb7f2;
   background: none;
@@ -27,6 +30,7 @@
   cursor: pointer;
 }
 
+/* line 43, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-menu {
   width: 100%;
   display: flex;
@@ -35,10 +39,12 @@
   margin-right: 65px;
 }
 
+/* line 51, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-menu-item {
   list-style: none;
 }
 
+/* line 55, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-menu-link {
   text-decoration: none;
   color: #0cb7f2;
@@ -46,10 +52,12 @@
   margin: 0px 30px;
 }
 
+/* line 62, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-menu-link {
   position: relative;
 }
 
+/* line 64, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-menu-link:before {
   content: "";
   position: absolute;
@@ -63,15 +71,18 @@
   transition: all 0.4s ease-in-out 0s;
 }
 
+/* line 76, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-menu-link:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
 
+/* line 83, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-menu-link-active {
   position: relative;
 }
 
+/* line 85, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-menu-link-active:before {
   content: "";
   position: absolute;
@@ -85,29 +96,35 @@
   transition: all 0.4s ease-in-out 0s;
 }
 
+/* line 99, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
 .nav-toggle {
   display: none;
 }
 
 @media (max-width: 768px) {
+  /* line 122, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .nav {
     height: 70px;
     flex-direction: row;
     justify-content: space-between;
   }
+  /* line 128, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .logo {
     padding: 0 30px;
     line-height: 60px;
   }
+  /* line 133, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .logo_mobile {
     width: 50px;
     height: 50px;
     padding: 5px;
     display: block;
   }
+  /* line 140, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .img_logo {
     display: none;
   }
+  /* line 144, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .nav-menu {
     justify-content: flex-start;
     flex-direction: column;
@@ -125,72 +142,97 @@
     transition: left 0.9s;
     z-index: 2;
   }
+  /* line 164, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .nav-menu-item {
     line-height: 70px;
   }
+  /* line 168, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .nav-menu-link {
     color: #0cb7f2;
     margin: 0px 0px;
   }
+  /* line 173, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .nav-menu-link:hover,
   .nav-menu-link-active {
     background: none;
   }
+  /* line 178, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .nav-toggle {
     display: block;
   }
+  /* line 182, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_header.scss */
   .nav-menu_visible {
     left: 0;
   }
 }
 
+/* line 1, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
 h1 {
   font: bold 60px "Poppins", sans-serif;
+  color: #004173;
 }
 
+/* line 6, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
 a {
   font: bold 20px "Poppins", sans-serif;
 }
 
+/* line 10, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
 p {
   font: normal 20px "Halant", serif;
 }
 
+/* line 14, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
 .form_search::placeholder {
   font: normal 20px "Halant", serif;
 }
 
+/* line 18, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
 .form_submit {
   font: normal 20px "Halant", serif;
 }
 
+/* line 23, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
 .input_card {
   font: normal 16px "Halant", serif;
 }
 
+/* line 26, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
 .input_card::placeholder {
   font: normal 16px "Halant", serif;
 }
 
+/* line 31, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
 .submit_card {
   font: normal 16px "Halant", serif;
 }
 
+/* line 35, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
+.desc_event {
+  font: normal 16px "Halant", serif;
+  color: #004173;
+}
+
 @media (max-width: 768px) {
+  /* line 41, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
   h1 {
     font: bold 40px "Poppins", sans-serif;
   }
+  /* line 45, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
   .content_header {
     font: normal 16px "Halant", serif;
   }
+  /* line 49, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
   .form_search::placeholder {
     font: normal 16px "Halant", serif;
   }
+  /* line 53, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_tipografia.scss */
   .form_submit {
     font: normal 16px "Halant", serif;
   }
 }
 
+/* line 1, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .popup {
   width: 100%;
   height: 100%;
@@ -199,6 +241,7 @@ p {
   justify-content: center;
 }
 
+/* line 9, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .bg_card {
   width: 60%;
   height: 40vh;
@@ -214,6 +257,7 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
+/* line 25, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .bg_card::after {
   content: "";
   position: absolute;
@@ -226,16 +270,19 @@ p {
   transition: opacity 0.3s ease-in-out;
 }
 
+/* line 37, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .bg_card:hover {
   cursor: pointer;
   transform: scale(1.03, 1.03);
 }
 
 /* Fade in the pseudo-element with the bigger shadow */
+/* line 43, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .bg_card:hover::after {
   opacity: 1;
 }
 
+/* line 47, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .inf_card {
   width: 250px;
   height: 250px;
@@ -250,16 +297,19 @@ p {
   line-height: 40px;
 }
 
+/* line 61, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .parafos_card {
   text-align: center;
   margin-bottom: 15px;
   color: #004173;
 }
 
+/* line 67, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .title_card {
   color: #0cb7f2;
 }
 
+/* line 73, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .form_cards {
   width: 100%;
   display: flex;
@@ -268,6 +318,7 @@ p {
   flex-direction: column;
 }
 
+/* line 81, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .input_card {
   width: 100%;
   height: 35px;
@@ -278,14 +329,17 @@ p {
   color: #004173;
 }
 
+/* line 91, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .input_card::placeholder {
   color: #004173;
 }
 
+/* line 94, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .input_card:focus {
   color: #004173;
 }
 
+/* line 98, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .submit_card {
   width: 50%;
   height: 30px;
@@ -297,17 +351,20 @@ p {
   margin-top: 20px;
 }
 
+/* line 108, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
 .submit_card:hover {
   border: 2px solid #004173;
 }
 
 @media (max-width: 768px) {
+  /* line 113, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
   .bg_card {
     width: 100%;
     height: 60vh;
     align-items: flex-start;
     justify-content: center;
   }
+  /* line 119, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
   .inf_card {
     margin-left: 0px;
     margin-top: 30px;
@@ -315,39 +372,87 @@ p {
 }
 
 @media (max-width: 1077px) {
+  /* line 126, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
   .bg_card {
     justify-content: center;
   }
+  /* line 129, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
   .inf_card {
     margin-left: 0px;
   }
 }
 
 @media (max-width: 280px) {
+  /* line 135, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_card.scss */
   .inf_card {
     width: 210px;
     height: 210px;
   }
 }
 
+/* line 1, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_footer.scss */
 .footer {
   margin-top: 0px;
 }
 
+/* line 1, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_popup.scss */
 .pop_up {
   position: absolute;
   height: 85vh;
   width: 85vh;
   margin-bottom: 35%;
   margin-left: -20%;
-  background-color: red;
-  z-index: 3;
+  background-color: #dcdcdc;
+  z-index: 4;
   border: 2px solid #004173;
   border-radius: 5px;
   box-shadow: 0px 0px 120px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* line 14, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_popup.scss */
+.close {
+  width: 10%;
+  height: 35px;
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #004173;
+  background-color: #dcdcdc;
+  float: right;
+}
+
+/* line 24, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_popup.scss */
+.close:hover {
+  border: 2px solid #004173;
+}
+
+/* line 28, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_popup.scss */
+.img_popup {
+  width: 100%;
+  height: 50%;
+  background-image: url("../imagenes/concert.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 37, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_popup.scss */
+.desc_event {
+  margin-top: 20px;
+}
+
+/* line 41, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_popup.scss */
+.blur {
+  width: 100vw;
+  height: 300vh;
+  background: rgba(205, 205, 205, 0.42);
+  backdrop-filter: blur(8.7px);
+  position: absolute;
+  z-index: 3;
+}
+
 @media (max-width: 768px) {
+  /* line 51, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_popup.scss */
   .pop_up {
     height: 50vh;
     width: 40vh;
@@ -356,6 +461,17 @@ p {
   }
 }
 
+/* line 1, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_desplegable.scss */
+.visible {
+  display: block;
+}
+
+/* line 5, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/_desplegable.scss */
+.no_visible {
+  display: none;
+}
+
+/* line 9, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 *,
 *:before,
 *:after {
@@ -364,6 +480,7 @@ p {
   box-sizing: border-box;
 }
 
+/* line 17, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 body {
   margin-top: 200px;
   display: flex;
@@ -372,6 +489,7 @@ body {
   flex-direction: column;
 }
 
+/* line 27, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .section1 {
   width: 100%;
   display: flex;
@@ -379,17 +497,15 @@ body {
   justify-content: center;
 }
 
+/* line 34, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .header_img {
   position: relative;
   z-index: 2;
   height: 50vh;
   width: 50vw;
-  background-image: url("../imagenes/concert.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
+/* line 45, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .header_article {
   background-color: #004173;
   height: 35vh;
@@ -403,18 +519,22 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* line 58, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
   body {
     margin-top: 100px;
   }
+  /* line 62, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
   .section1 {
     flex-direction: column-reverse;
   }
+  /* line 66, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
   .header_img {
     height: 23vh;
     width: 70vw;
     transform: translate(0px, 30px);
     z-index: 0;
   }
+  /* line 73, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
   .header_article {
     height: 25vh;
     width: 80vw;
@@ -422,6 +542,7 @@ body {
   }
 }
 
+/* line 82, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .section2 {
   margin-top: 100px;
   width: 100vw;
@@ -431,6 +552,7 @@ body {
   flex-direction: column;
 }
 
+/* line 91, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .busqueda {
   margin-top: 40px;
   width: 80vw;
@@ -439,6 +561,7 @@ body {
   justify-content: center;
 }
 
+/* line 99, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .form_search {
   width: 90%;
   height: 35px;
@@ -449,14 +572,17 @@ body {
   color: #004173;
 }
 
+/* line 109, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .form_search::placeholder {
   color: #004173;
 }
 
+/* line 112, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 input:focus {
   color: #004173;
 }
 
+/* line 116, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .form_submit {
   width: 10%;
   height: 35px;
@@ -468,19 +594,23 @@ input:focus {
   transform: translate(-10px, 0px);
 }
 
+/* line 126, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .form_submit:hover {
   border: 2px solid #004173;
 }
 
 @media (max-width: 768px) {
+  /* line 131, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
   .form_search {
     width: 80%;
   }
+  /* line 135, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
   .form_submit {
     width: 20%;
   }
 }
 
+/* line 142, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .section3 {
   margin-top: 100px;
   width: 90vw;
@@ -489,6 +619,7 @@ input:focus {
   justify-content: center;
 }
 
+/* line 150, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .display_card {
   width: 80vw;
   height: 100%;
@@ -497,6 +628,7 @@ input:focus {
   justify-content: center;
 }
 
+/* line 158, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
 .display_category {
   width: 20vw;
   height: 100%;
@@ -506,12 +638,38 @@ input:focus {
 }
 
 @media (max-width: 768px) {
+  /* line 167, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
   .section3 {
     flex-direction: column;
     width: 100%;
   }
+  /* line 172, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
   .display_card {
     align-items: center;
     justify-content: center;
   }
 }
+
+/* line 180, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
+.section4 {
+  margin-top: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 188, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
+.container {
+  width: 80vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* line 193, ../../../../XAMPP/xamppfiles/htdocs/project_betav2/scss/style.scss */
+.container__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */

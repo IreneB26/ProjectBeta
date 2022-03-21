@@ -3,6 +3,9 @@ include('components-php/header.php');
 ?>
 
 <body>
+
+    <div class="popup_after"></div>
+
     <!-- ------------------------------- -->
     <section class="section1">
 
@@ -11,8 +14,12 @@ include('components-php/header.php');
             <p class="content_header">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it </p>
 
         </article>
-        <figure class="header_img">
-        </figure>
+        <!-- <figure class="header_img">
+        </figure> -->
+
+        <video class="header_img" autoplay="autoplay" loop="loop" muted defaultMuted>
+            <source src="imagenes/video.mp4" type="video/mp4">
+        </video>
 
 
 
@@ -54,11 +61,33 @@ include('components-php/header.php');
         </div>
 
 
+
+
+
     </section>
 
 
 
     <!-- -------------------------- -->
+
+    <section class="section4">
+
+        <container class="question">
+            kldsjflk
+            <button class="open">abrir</button>
+
+            <div class="answer no_visible">
+                jdfkjsf
+            </div>
+
+
+        </container>
+
+    </section>
+
+
+
+    <!-- -------------------------------- -->
 
 
     <?php

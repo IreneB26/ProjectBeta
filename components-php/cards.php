@@ -1,5 +1,7 @@
 <div class="popup">
+
     <div class="pop"> </div>
+
 
     <figure class="bg_card">
 

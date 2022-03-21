@@ -1,5 +1,6 @@
 h1 {
   font: bold 60px $titulos;
+  color: $color_principal;
 }
 
 a {
@@ -29,6 +30,11 @@ p {
 
 .submit_card {
   font: normal 16px $texto;
+}
+
+.desc_event {
+  font: normal 16px $texto;
+  color: $color_principal;
 }
 
 @media (max-width: 768px) {

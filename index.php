@@ -36,14 +36,20 @@ include('components-php/header.php');
 
     <section class="section3">
 
+        <!-- <div class="pop"> </div> -->
+
         <div class="display_category">
             <p>test</p>
 
         </div>
 
+
+
         <div class="display_card">
 
+
             <?php include('components-php/cards.php'); ?>
+
 
         </div>
 

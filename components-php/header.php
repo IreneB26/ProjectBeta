@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="./css/style.css">
   <script defer src="./js/index.js"></script>
+  <script defer src="./js/popup.js"></script>
+
   <script src="https://kit.fontawesome.com/97ca824fd3.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

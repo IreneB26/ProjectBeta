@@ -1,0 +1,21 @@
+.pop_up {
+  position: absolute;
+  height: 85vh;
+  width: 85vh;
+  margin-bottom: 20%;
+  margin-left: -20%;
+  background-color: red;
+  z-index: 3;
+  border: 2px solid $color_principal;
+  border-radius: 5px;
+  box-shadow: 0px 0px 120px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .pop_up {
+    height: 50vh;
+    width: 40vh;
+    margin-bottom: 20%;
+    margin-left: 0%;
+  }
+}

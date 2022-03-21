@@ -1,3 +1,7 @@
+
+
+ 
+
 // mobile menu
 
 const navToggle = document.querySelector(".nav-toggle");
@@ -5,6 +9,8 @@ const navMenu = document.querySelector(".nav-menu");
 const icon = document.querySelector(".icon");
 const linkActive = document.querySelector(".nav-menu-link");
 const footer = document.querySelector(".footer");
+
+
 
 
 
@@ -19,6 +25,7 @@ navToggle.addEventListener("click", () =>{
     }else{
         icon.setAttribute("class", "fas fa-bars icon");
     }
+
 
 // icono cambiar al pulsar seccion
 
@@ -58,6 +65,7 @@ $(".nav-menu").find("a").click(function(){
     $(this).addClass('nav-menu_visible')
   })
 
+
   
 
 
@@ -81,3 +89,12 @@ $(".nav-menu").find("a").click(function(){
 //     $('.header').removeClass('small');
 //   }
 // }
+
+
+  
+  
+  
+
+
+
+

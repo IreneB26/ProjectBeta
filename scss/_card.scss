@@ -130,3 +130,10 @@
     margin-left: 0px;
   }
 }
+
+@media (max-width: 280px) {
+  .inf_card {
+    width: 210px;
+    height: 210px;
+  }
+}

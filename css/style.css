@@ -323,6 +323,13 @@ p {
   }
 }
 
+@media (max-width: 280px) {
+  .inf_card {
+    width: 210px;
+    height: 210px;
+  }
+}
+
 .footer {
   margin-top: 0px;
 }

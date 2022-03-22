@@ -72,16 +72,36 @@ include('components-php/header.php');
 
     <section class="section4">
 
-        <container class="question">
-            kldsjflk
-            <button class="open">abrir</button>
+        <h1>FAQ</h1>
 
-            <div class="answer no_visible">
-                jdfkjsf
+        <div class="flex_faq">
+            <div class="izquierda">
+                <container class="question">
+                    <p>test <button class="open">abrir</button></p>
+
+                    <hr>
+
+                    <div class="answer no_visible">
+                        <p>test</p>
+                    </div>
+
+
+                </container>
             </div>
+            <div class="derecha">
+                <container class="question">
+                    <p>test <button class="open">abrir</button></p>
+                    <hr>
+
+                    <div class="answer no_visible">
+                        <p>test</p>
+                    </div>
 
 
-        </container>
+                </container>
+            </div>
+        </div>
+
 
     </section>
 

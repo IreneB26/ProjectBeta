@@ -111,13 +111,13 @@
 @media (max-width: 768px) {
   // cabecera qeu se activa al bajar
 
-  // .header {
-  //   &.small {
-  //     .nav {
-  //       height: 70px;
-  //     }
-  //   }
-  // }
+  .header {
+    &.small {
+      .nav {
+        height: 70px;
+      }
+    }
+  }
 
   .nav {
     height: 70px;

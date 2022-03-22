@@ -48,20 +48,7 @@ close.addEventListener("click", () =>{
 
 
 
-// desplegable
-
-const answer = document.querySelector(".answer");
-const question = document.querySelector(".question");
-const abrir = document.querySelector(".open");
 
 
-abrir.addEventListener("click", () =>{
-    
 
 
-    answer.classList.toggle("visible");
-    answer.classList.toggle("no_visible");
-
-   
-    
-});

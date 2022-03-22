@@ -183,15 +183,30 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $text_grey;
+  flex-direction: column;
 }
 
-.container {
-  width: 80vw;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.container__heading {
+.izquierda {
+  width: 40%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.derecha {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex_faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
 }

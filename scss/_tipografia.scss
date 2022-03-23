@@ -11,12 +11,42 @@ p {
   font: normal 20px $texto;
 }
 
+.text_img {
+  font: bold 50px $titulos;
+  color: white;
+}
+
 .form_search::placeholder {
   font: normal 20px $texto;
 }
 
 .form_submit {
   font: normal 20px $texto;
+}
+
+.footer_title {
+  font: bold 50px $titulos;
+  color: $detail;
+}
+
+.title_footer_form {
+  font: bold 20px $titulos;
+  color: $color_principal;
+}
+
+.content_footer_form {
+  font: normal 16px $texto;
+  color: $color_principal;
+}
+
+.input {
+  font: normal 16px $texto;
+  color: $color_principal;
+}
+
+.social {
+  font: normal 20px $texto;
+  color: $text_grey;
 }
 
 // forms cards
@@ -40,10 +70,6 @@ p {
 @media (max-width: 768px) {
   h1 {
     font: bold 40px $titulos;
-  }
-
-  .content_header {
-    font: normal 16px $texto;
   }
 
   .form_search::placeholder {

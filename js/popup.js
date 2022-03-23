@@ -5,45 +5,45 @@ const blur = document.querySelector(".popup_after");
 
 
 
-card.addEventListener("click", () =>{
-    body.style.overflow = 'hidden';
+// card.addEventListener("click", () =>{
+//     body.style.overflow = 'hidden';
     
-    popup.classList.toggle("pop_up");
-    blur.classList.toggle("blur");
+//     popup.classList.toggle("pop_up");
+//     blur.classList.toggle("blur");
 
 
 
-    popup.innerHTML = popup.innerHTML + `
-    <button class="close"> <i class="fas fa-times fa-lg icon"></i> </button>
-        <figure class="img_popup">
+//     popup.innerHTML = popup.innerHTML + `
+//     <button class="close"> <i class="fas fa-times fa-lg icon"></i> </button>
+//         <figure class="img_popup">
 
-        </figure>
+//         </figure>
 
-        <article class="desc_event">
-        una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-        </article>
+//         <article class="desc_event">
+//         una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+//         </article>
 
 
         
 
-    `;
+//     `;
 
-    const close = document.querySelector(".close");
+//     const close = document.querySelector(".close");
 
-close.addEventListener("click", () =>{
+// close.addEventListener("click", () =>{
     
-    blur.classList.remove("blur");
+//     blur.classList.remove("blur");
 
-    popup.classList.remove('pop_up');
+//     popup.classList.remove('pop_up');
     
-    body.style.overflow = 'visible';
+//     body.style.overflow = 'visible';
 
-    popup.innerHTML = ``;
+//     popup.innerHTML = ``;
 
     
-});
+// });
     
-});
+// });
 
 
 

@@ -41,7 +41,7 @@
       <li class="nav-menu-item"><a href="#1" class="nav-menu-link">ME!</a></li>
       <li class="nav-menu-item"><a href="#2" class="nav-menu-link">Objetivo</a></li>
       <li class="nav-menu-item"><a href="#3" class="nav-menu-link">Skills</a></li>
-      <li class="nav-menu-item"><a href="#4" class="nav-menu-link">Contacto</a></li>
+      <li class="nav-menu-item"><a href="#footer" class="nav-menu-link">Contacto</a></li>
 
 
 

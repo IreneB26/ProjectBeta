@@ -8,13 +8,13 @@
   // z-index: -2;
 
   // cabecera que se anima al bajar(aparece)
-  //   &.small {
-  //     // when header.small change logo pad & font size
-  //     .nav {
-  //       background-color: $color_principal;
-  //       height: 80px;
-  //     }
-  //   }
+  &.small {
+    // when header.small change logo pad & font size
+    .nav {
+      background-color: $color_principal;
+      height: 80px;
+    }
+  }
 }
 
 // menu nav menu
@@ -26,7 +26,6 @@
   position: fixed;
   transition: 0.3s;
   z-index: 3;
-  background-color: $color_principal;
 }
 
 .nav-toggle {

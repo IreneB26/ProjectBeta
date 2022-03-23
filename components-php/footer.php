@@ -1,12 +1,18 @@
-<footer class="footer">
+<footer class="footer" id="footer">
 
     <div class="footer_iz">
+        <h1 class="footer_title">Siguenos en nuestras redes sociales</h1>
 
-        <ul>
-            <li>Privacidad</li>
-            <li>Derechos</li>
-            <li>TEst</li>
+        <ul class="list_social">
+            <li class="social"><a class="visited" href="https://github.com/IreneB26/project_beta" target="_blank">linkedin</a></li>
+            <li class="social"><a class="visited"> Facebook</a></li>
+            <li class="social"><a class="visited"> twitter</a></li>
+            <li class="social"><a class="visited"> twitter</a></li>
+
         </ul>
+
+
+
 
     </div>
 
@@ -14,7 +20,47 @@
 
 
 
+        <form class="formulario" method="post" action="principal.php">
+            <h1 class="title_footer_form">Contactanos</h1>
+            <p class="content_footer_form">Hola, ¿Cómo podemos ayudarte?</p>
+
+            <label class="label" for="email">Correo</label>
+            <input class="input" type="email" id="email" name="email" placeholder="Correo">
+            <label class="label" for="mensaje">Mensaje</label>
+            <textarea class="input" type="text" id="mensaje" name="mensaje" placeholder="Escriba su mensaje aqui..."></textarea>
+            <input class="boton" type="submit" value="Enviar" name="submit">
+        </form>
+
     </div>
 
 
 </footer>
+
+
+<?php
+if (isset($_POST['submit'])) {
+
+    $mensaje .= "Contacto desde la web:\n";
+    $mensaje .= "-------------------------------------\n";
+    $mensaje .= "\n";
+    $mensaje .= "email: $_POST[email]\n";
+    $mensaje .= "\n";
+    $mensaje .= "Mensaje: $_POST[mensaje]\n";
+    $desde = 'From: Desde la web <irene@gmail.com>' . "\r\n";
+    $to = "bargues.irene@gmail.com";
+    $subject = "Web Contacto AboutMe";
+
+
+    mail($to, $subject, $mensaje, $desde);
+    echo "<p class='confirmacion'>Su mensaje se ha enviado correctamente</p>";
+
+
+?>
+    <script>
+        console.log("enviado");
+        window.location = "#footer";
+    </script>
+<?php
+    exit();
+}
+?>

@@ -9,17 +9,22 @@ include('components-php/header.php');
     <!-- ------------------------------- -->
     <section class="section1">
 
-        <article class="header_article">
 
-            <p class="content_header">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it </p>
+        <figure class="header_img">
+            <p class="text_img">Busca tu evento</p>
 
-        </article>
-        <!-- <figure class="header_img">
-        </figure> -->
+            <form class="busqueda" action="" method="post">
 
-        <video class="header_img" autoplay="autoplay" loop="loop" muted defaultMuted>
-            <source src="imagenes/video.mp4" type="video/mp4">
-        </video>
+                <input class="form_search" type="text" name="busqueda" placeholder="Busca tu evento">
+                <input class="form_submit" type="submit" name="enviar">
+
+            </form>
+
+        </figure>
+
+        <!-- <video class="header_img" autoplay="autoplay" loop="loop" muted defaultMuted> -->
+        <!-- <source src="imagenes/video.mp4" type="video/mp4"> -->
+        <!-- </video> -->
 
 
 
@@ -28,14 +33,18 @@ include('components-php/header.php');
     <!-- -------------------------- -->
 
     <section class="section2">
-        <h1>Busca tu evento</h1>
+        <h1>Categorías</h1>
 
-        <form class="busqueda" action="" method="post">
+        <ul class="contain_cat">
 
-            <input class="form_search" type="text" name="busqueda" placeholder="Busca tu evento">
-            <input class="form_submit" type="submit" name="enviar">
+            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
+            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
+            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
+            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
+            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
 
-        </form>
+
+        </ul>
 
     </section>
 
@@ -45,22 +54,10 @@ include('components-php/header.php');
 
         <!-- <div class="pop"> </div> -->
 
-        <div class="display_category">
-            <p>test</p>
-
-        </div>
 
 
 
-        <div class="display_card">
-
-
-            <?php include('components-php/cards.php'); ?>
-
-
-        </div>
-
-
+        <?php include('components-php/cards.php'); ?>
 
 
 

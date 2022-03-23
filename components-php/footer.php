@@ -34,7 +34,32 @@
     </div>
 
 
+
+
 </footer>
+
+<container class="legal">
+
+    <div class="empresa">
+
+        <p class="marca"> Ticket 2 you</p>
+    </div>
+
+    <div class="pag">
+
+        <ul class="link_legal">
+
+            <li><a class="link_legal_a" href="">Política de privacidad</a></li>
+            <li><a class="link_legal_a" href=""> Aviso Legal</a></li>
+            <li><a class="link_legal_a" href=""> Politica de cookies</a></li>
+
+        </ul>
+
+
+    </div>
+
+</container>
+
 
 
 <?php

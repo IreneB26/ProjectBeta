@@ -14,6 +14,10 @@
       background-color: $color_principal;
       height: 80px;
     }
+
+    // .nav-menu-link {
+    //   color: $detail;
+    // }
   }
 }
 
@@ -29,7 +33,7 @@
 }
 
 .nav-toggle {
-  color: $secundario;
+  color: $text_grey;
   background: none;
   border: none;
   font-size: 30px;
@@ -53,7 +57,7 @@
 
 .nav-menu-link {
   text-decoration: none;
-  color: $secundario;
+  color: $text_grey;
   padding: 10px;
   margin: 0px 30px;
 }

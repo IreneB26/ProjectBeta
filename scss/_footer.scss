@@ -25,13 +25,13 @@
   color: $text_grey;
 }
 
+.visited:hover {
+  color: $detail;
+}
+
 .social {
   margin: 30px;
   list-style: none;
-}
-
-.social:hover {
-  color: $detail;
 }
 
 .footer_de {
@@ -50,6 +50,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .label {
@@ -90,6 +91,43 @@ input:focus {
   border: 3px solid $detail;
 }
 
+.legal {
+  width: 100vw;
+  height: 7vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.empresa {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.pag {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link_legal {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.link_legal_a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+.link_legal_a:hover {
+  color: $detail;
+}
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -101,5 +139,10 @@ input:focus {
 
   .footer_de {
     width: 100%;
+  }
+
+  .formulario {
+    width: 75%;
+    height: 90%;
   }
 }

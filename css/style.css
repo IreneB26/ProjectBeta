@@ -17,7 +17,7 @@
   z-index: 3; }
 
 .nav-toggle {
-  color: #0cb7f2;
+  color: #dcdcdc;
   background: none;
   border: none;
   font-size: 30px;
@@ -38,7 +38,7 @@
 
 .nav-menu-link {
   text-decoration: none;
-  color: #0cb7f2;
+  color: #dcdcdc;
   padding: 10px;
   margin: 0px 30px; }
 
@@ -134,7 +134,9 @@ p {
 
 .text_img {
   font: bold 50px "Poppins", sans-serif;
-  color: white; }
+  color: white;
+  position: relative;
+  z-index: 1; }
 
 .form_search::placeholder {
   font: normal 20px "Halant", serif; }
@@ -172,6 +174,14 @@ p {
 
 .desc_event {
   font: normal 16px "Halant", serif;
+  color: #004173; }
+
+.link_legal_a {
+  font: normal 20px "Halant", serif;
+  color: #004173; }
+
+.marca {
+  font: normal 20px "Halant", serif;
   color: #004173; }
 
 @media (max-width: 768px) {
@@ -329,12 +339,12 @@ p {
   text-decoration: none;
   color: #dcdcdc; }
 
+.visited:hover {
+  color: #0cb7f2; }
+
 .social {
   margin: 30px;
   list-style: none; }
-
-.social:hover {
-  color: #0cb7f2; }
 
 .footer_de {
   width: 50%;
@@ -350,7 +360,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: 10px; }
 
 .label {
   display: block;
@@ -385,13 +396,47 @@ input:focus {
   cursor: pointer;
   border: 3px solid #0cb7f2; }
 
+.legal {
+  width: 100vw;
+  height: 7vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.empresa {
+  width: 50%;
+  padding-left: 30px; }
+
+.pag {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.link_legal {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap; }
+
+.link_legal_a {
+  text-decoration: none;
+  margin: 20px; }
+
+.link_legal_a:hover {
+  color: #0cb7f2; }
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column; }
   .footer_iz {
     width: 100%; }
   .footer_de {
-    width: 100%; } }
+    width: 100%; }
+  .formulario {
+    width: 75%;
+    height: 90%; } }
 
 .pop_up {
   position: absolute;
@@ -483,7 +528,6 @@ input:focus {
   box-sizing: border-box; }
 
 body {
-  margin-top: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -497,19 +541,31 @@ body {
   justify-content: center; }
 
 .header_img {
-  position: relative;
-  padding-top: 100px;
   height: 75vh;
   width: 100vw;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-image: url("../imagenes/concert.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
+.header_img::before {
+  content: "";
+  position: absolute;
+  height: 75vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.509); }
+
 .busqueda {
+  position: relative;
+  z-index: 1;
   margin-top: 40px;
   width: 80vw;
   display: flex;
@@ -545,8 +601,6 @@ input:focus {
   border: 3px solid #004173; }
 
 @media (max-width: 768px) {
-  body {
-    margin-top: 75px; }
   .header_img {
     height: 75vh;
     width: 100vw;

@@ -16,7 +16,7 @@
 }
 
 body {
-  margin-top: 75px;
+  // margin-top: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,13 +34,12 @@ body {
 }
 
 .header_img {
-  position: relative;
-  padding-top: 100px;
+  // padding-top: 100px;
   height: 75vh;
   width: 100vw;
   display: flex;
   align-items: center;
-  // justify-content: center;
+  justify-content: center;
   flex-direction: column;
 
   background-image: url("../imagenes/concert.jpg");
@@ -49,7 +48,21 @@ body {
   background-size: cover;
 }
 
+.header_img::before {
+  content: "";
+  position: absolute;
+  height: 75vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.509);
+}
+
 .busqueda {
+  position: relative;
+  z-index: 1;
   margin-top: 40px;
   width: 80vw;
   display: flex;
@@ -89,10 +102,6 @@ input:focus {
 }
 
 @media (max-width: 768px) {
-  body {
-    margin-top: 75px;
-  }
-
   .header_img {
     height: 75vh;
     width: 100vw;

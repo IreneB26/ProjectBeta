@@ -14,6 +14,8 @@ p {
 .text_img {
   font: bold 50px $titulos;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .form_search::placeholder {
@@ -67,6 +69,15 @@ p {
   color: $color_principal;
 }
 
+.link_legal_a {
+  font: normal 20px $texto;
+  color: $color_principal;
+}
+
+.marca {
+  font: normal 20px $texto;
+  color: $color_principal;
+}
 @media (max-width: 768px) {
   h1 {
     font: bold 40px $titulos;

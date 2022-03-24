@@ -76,7 +76,7 @@
 .nav-toggle {
   display: none; }
 
-@media (max-width: 768px) {
+@media (max-width: 969px) {
   .header.small .nav {
     height: 70px; }
   .nav {
@@ -164,6 +164,18 @@ p {
   font: normal 20px "Halant", serif;
   color: #dcdcdc; }
 
+.p_registro {
+  font: normal 20px "Halant", serif;
+  color: white; }
+
+.a_registro {
+  font: normal 20px "Halant", serif;
+  color: #0cb7f2; }
+
+.link_legal_a_incio_sesion {
+  font: normal 20px "Halant", serif;
+  color: white; }
+
 .input_card {
   font: normal 16px "Halant", serif; }
   .input_card::placeholder {
@@ -183,6 +195,25 @@ p {
 .marca {
   font: normal 20px "Halant", serif;
   color: #004173; }
+
+.logo_incio_sesion {
+  font: bold 50px "Poppins", sans-serif;
+  color: white; }
+
+.formulario_inicio_sesion {
+  font: normal 20px "Halant", serif;
+  color: white; }
+
+.inicio_sesion_text {
+  font: normal 20px "Halant", serif;
+  color: white; }
+
+.inicio_sesion_title {
+  font: bold 20px "Poppins", sans-serif;
+  color: white; }
+
+.boton_sesion {
+  font: normal 16px "Halant", serif; }
 
 @media (max-width: 768px) {
   h1 {
@@ -320,7 +351,8 @@ p {
 .footer {
   background-color: #004173;
   width: 100vw;
-  display: flex; }
+  display: flex;
+  padding: 20px; }
 
 .footer_iz {
   width: 50%;
@@ -438,7 +470,9 @@ input:focus {
     width: 100%; }
   .formulario {
     width: 75%;
-    height: 90%; } }
+    height: 90%; }
+  .link_legal_a {
+    margin: 0px; } }
 
 .pop_up {
   position: absolute;
@@ -531,6 +565,18 @@ input:focus {
   align-items: center;
   justify-content: center; }
 
+.inicio_sesion::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #004173dd; }
+
 .logo_incio_sesion {
   margin-bottom: 50px; }
 
@@ -543,17 +589,18 @@ input:focus {
 .formulario_inicio_sesion {
   width: 35vw;
   height: 50vh;
-  border: 2px solid red;
+  border: 2px solid white;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: 10px; }
 
 .crear_cuenta {
   width: 35vw;
   height: 15vh;
-  border: 2px solid red;
+  border: 2px solid white;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -564,22 +611,72 @@ input:focus {
   margin-bottom: 5px; }
 
 .input_sesion {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  padding: 10px; }
 
 .boton_sesion {
   background-color: #0cb7f2;
-  border: 2px solid #0cb7f2; }
+  border: 2px solid #0cb7f2;
+  color: #004173; }
 
 .boton_sesion:hover {
   border: 2px solid #004173; }
 
+.video_inicio_sesion {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -2;
+  object-fit: cover; }
+
+.a_registro {
+  text-decoration: none; }
+
+.a_registro:hover {
+  text-decoration: underline; }
+
+.legal_inicio_sesion {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.link_legal_a_incio_sesion:hover {
+  color: #0cb7f2; }
+
+.link_legal_a_incio_sesion {
+  margin: 10px; }
+
 @media (max-width: 960px) {
   .formulario_inicio_sesion {
     width: 70vw;
-    height: 50vh; }
+    height: 50vh;
+    align-items: center;
+    justify-content: center; }
   .crear_cuenta {
     width: 70vw;
     height: 15vh; } }
+
+.crear_usuario {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.crear_usuario::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6d0005dd; }
 
 *,
 *:before,
@@ -594,6 +691,9 @@ body {
   justify-content: center;
   flex-direction: column;
   scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
 
 .section1 {
   width: 100%;

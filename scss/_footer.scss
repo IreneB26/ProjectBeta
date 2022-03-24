@@ -2,6 +2,7 @@
   background-color: $color_principal;
   width: 100vw;
   display: flex;
+  padding: 20px;
 }
 
 .footer_iz {
@@ -145,5 +146,9 @@ input:focus {
   .formulario {
     width: 75%;
     height: 90%;
+  }
+
+  .link_legal_a {
+    margin: 0px;
   }
 }

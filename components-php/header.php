@@ -39,7 +39,7 @@
 
     <ul class="nav-menu">
       <li class="nav-menu-item"><a href="#1" class="nav-menu-link">Crea tu evento</a></li>
-      <li class="nav-menu-item"><a href="#2" class="nav-menu-link">Inicio de sesión</a></li>
+      <li class="nav-menu-item"><a href="inicio_sesion.php" class="nav-menu-link">Inicio de sesión</a></li>
       <li class="nav-menu-item"><a href="#3" class="nav-menu-link">Carrito</a></li>
       <li class="nav-menu-item"><a href="#footer" class="nav-menu-link">Contacto</a></li>
 

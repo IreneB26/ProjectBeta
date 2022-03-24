@@ -110,6 +110,16 @@
 .link_legal_a_incio_sesion {
   margin: 10px;
 }
+.click_logo {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_incio_sesion:hover {
+  font-size: 80px;
+}
 
 // .video_inicio_sesion_mobile {
 //   display: none;
@@ -127,5 +137,11 @@
   .crear_cuenta {
     width: 70vw;
     height: 15vh;
+  }
+}
+
+@media (max-width: 457px) {
+  .link_legal {
+    flex-direction: column;
   }
 }

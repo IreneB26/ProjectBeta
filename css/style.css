@@ -182,7 +182,10 @@ p {
     font: normal 16px "Halant", serif; }
 
 .submit_card {
-  font: normal 16px "Halant", serif; }
+  font: normal 18px "Halant", serif; }
+
+.ver_mas {
+  font: normal 18px "Halant", serif; }
 
 .desc_event {
   font: normal 16px "Halant", serif;
@@ -648,6 +651,15 @@ input:focus {
 .link_legal_a_incio_sesion {
   margin: 10px; }
 
+.click_logo {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.logo_incio_sesion:hover {
+  font-size: 80px; }
+
 @media (max-width: 960px) {
   .formulario_inicio_sesion {
     width: 70vw;
@@ -657,6 +669,10 @@ input:focus {
   .crear_cuenta {
     width: 70vw;
     height: 15vh; } }
+
+@media (max-width: 457px) {
+  .link_legal {
+    flex-direction: column; } }
 
 .crear_usuario {
   width: 100vw;

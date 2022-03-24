@@ -16,7 +16,7 @@
         <source src="imagenes/video.mp4" type="video/mp4">
     </video>
 
-    <a href="index.php">
+    <a class="click_logo" href="index.php">
         <h1 class="logo_incio_sesion">LOGO</h1>
     </a>
 

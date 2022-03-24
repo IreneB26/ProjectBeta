@@ -6,6 +6,7 @@
 @import "_popup.scss";
 @import "_desplegable.scss";
 @import "_form.scss";
+@import "inicio-sesion.scss";
 
 *,
 *:before,
@@ -82,6 +83,7 @@ body {
 
 .form_search::placeholder {
   color: $color_principal;
+  opacity: 0.5;
 }
 input:focus {
   color: $color_principal;

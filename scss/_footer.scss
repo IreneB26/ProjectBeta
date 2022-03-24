@@ -55,7 +55,7 @@
 
 .label {
   display: block;
-  padding: 5px;
+  margin: 5px;
   width: 70%;
 }
 
@@ -70,6 +70,7 @@
 
 .input::placeholder {
   color: $color_principal;
+  opacity: 0.3;
 }
 input:focus {
   color: $color_principal;

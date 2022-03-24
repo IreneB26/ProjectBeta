@@ -269,7 +269,8 @@ p {
   color: #004173; }
 
 .input_card::placeholder {
-  color: #004173; }
+  color: #004173;
+  opacity: 0.3; }
 
 .input_card:focus {
   color: #004173; }
@@ -365,7 +366,7 @@ p {
 
 .label {
   display: block;
-  padding: 5px;
+  margin: 5px;
   width: 70%; }
 
 .input {
@@ -377,7 +378,8 @@ p {
   padding: 2px; }
 
 .input::placeholder {
-  color: #004173; }
+  color: #004173;
+  opacity: 0.3; }
 
 input:focus {
   color: #004173; }
@@ -515,10 +517,69 @@ input:focus {
   color: #004173; }
 
 .input_card::placeholder {
-  color: #004173; }
+  color: #004173;
+  opacity: 0.3; }
 
 .input_card:focus {
   color: #004173; }
+
+.inicio_sesion {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.logo_incio_sesion {
+  margin-bottom: 50px; }
+
+.inicio_sesion_title {
+  margin-bottom: 30px; }
+
+.inicio_sesion_text {
+  margin-bottom: 40px; }
+
+.formulario_inicio_sesion {
+  width: 35vw;
+  height: 50vh;
+  border: 2px solid red;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.crear_cuenta {
+  width: 35vw;
+  height: 15vh;
+  border: 2px solid red;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px; }
+
+.label_sesion {
+  margin-bottom: 5px; }
+
+.input_sesion {
+  margin-bottom: 5px; }
+
+.boton_sesion {
+  background-color: #0cb7f2;
+  border: 2px solid #0cb7f2; }
+
+.boton_sesion:hover {
+  border: 2px solid #004173; }
+
+@media (max-width: 960px) {
+  .formulario_inicio_sesion {
+    width: 70vw;
+    height: 50vh; }
+  .crear_cuenta {
+    width: 70vw;
+    height: 15vh; } }
 
 *,
 *:before,
@@ -582,7 +643,8 @@ body {
   color: #004173; }
 
 .form_search::placeholder {
-  color: #004173; }
+  color: #004173;
+  opacity: 0.5; }
 
 input:focus {
   color: #004173; }

@@ -89,6 +89,7 @@
 
 .input_card::placeholder {
   color: $color_principal;
+  opacity: 0.3;
 }
 .input_card:focus {
   color: $color_principal;

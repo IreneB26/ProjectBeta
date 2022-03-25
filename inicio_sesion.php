@@ -29,7 +29,7 @@
         <label class="label label_sesion" for="email">Correo</label>
         <input class="input input_sesion" type="email" id="email" name="email" placeholder="ticket2you@events.com">
         <label class="label label_sesion" for="mensaje">Contraseña</label>
-        <textarea class="input input_sesion" type="pasword" id="contraseña" name="contraseña" placeholder="Password"></textarea>
+        <input class="input input_sesion" type="password" id="contraseña" name="contraseña" placeholder="Password">
         <input class="boton boton_sesion" type="submit" value="Enviar" name="submit">
     </form>
 

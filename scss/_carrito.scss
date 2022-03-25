@@ -1,0 +1,21 @@
+.cart_display {
+  width: 50vw;
+  height: 100vh;
+  z-index: 4;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color_principal;
+  position: absolute;
+
+  overflow-y: auto;
+
+  // transicion menu despues(ya abieta)
+  left: 100%;
+  transition: left 0.9s;
+  z-index: 2;
+}
+.test {
+  left: 0;
+}

@@ -3,6 +3,7 @@
  const abrir = document.querySelectorAll(".open");
 
 
+
  abrir.forEach(function(button) {
      button.addEventListener('click', function(e) {
          answer.forEach(function(key) {
@@ -11,3 +12,5 @@
          });
      });
  });
+
+

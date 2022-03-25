@@ -15,6 +15,9 @@ const footer = document.querySelector(".footer");
 
 
 
+
+
+
 // funcion abrir boton al click menu hamburguesa
 navToggle.addEventListener("click", () =>{
     navMenu.classList.toggle("nav-menu_visible");

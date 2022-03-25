@@ -1,6 +1,6 @@
 const popup = document.querySelector(".pop");
 const card = document.querySelector(".bg_card");
-const body = document.querySelector("body");
+// const body = document.querySelector("body");
 const blur = document.querySelector(".popup_after");
 
 

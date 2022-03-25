@@ -131,9 +131,17 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 @media (max-width: 969px) {
   .dropdown-content {
+    display: block;
     position: relative;
     margin-bottom: 10px;
-    margin-left: 0px; }
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004173;
+    box-shadow: none; }
+  .dropdown-content a {
+    color: #dcdcdc; }
   .header.small .nav {
     height: 70px; }
   .nav {

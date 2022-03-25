@@ -177,9 +177,19 @@
   //posicion desplegable logout
 
   .dropdown-content {
+    display: block;
     position: relative;
     margin-bottom: 10px;
     margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color_principal;
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    color: $text_grey;
   }
 
   // cabecera qeu se activa al bajar

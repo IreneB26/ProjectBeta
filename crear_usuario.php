@@ -23,8 +23,8 @@
 
     <form class="formulario_inicio_sesion" method="post" action="crear_usuario.php">
 
-        <h1 class="title_footer_form inicio_sesion_title ">Registro</h1>
-        <p class="content_footer_form  inicio_sesion_text">Crea tu usuario para acceder a la web</p>
+        <h1 class="title_footer_form crear_usuario_title ">Registro</h1>
+        <p class="content_footer_form  crear_usuario_text">Crea tu usuario para acceder a la web</p>
 
 
         <label class="label label_sesion" for="email">Correo</label>

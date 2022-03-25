@@ -113,7 +113,17 @@ p {
   color: white;
 }
 
+.crear_usuario_text {
+  font: normal 20px $texto;
+  color: white;
+}
+
 .inicio_sesion_title {
+  font: bold 20px $titulos;
+  color: white;
+}
+
+.crear_usuario_title {
   font: bold 20px $titulos;
   color: white;
 }
@@ -133,5 +143,10 @@ p {
 
   .form_submit {
     font: normal 16px $texto;
+  }
+
+  .link_legal_a_incio_sesion {
+    font: normal 16px $texto;
+    color: white;
   }
 }

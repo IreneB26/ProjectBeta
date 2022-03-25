@@ -128,7 +128,7 @@
 @media (max-width: 960px) {
   .formulario_inicio_sesion {
     width: 70vw;
-    height: 50vh;
+    height: 70vh;
     align-items: center;
     justify-content: center;
     // flex-wrap: wrap;
@@ -138,10 +138,21 @@
     width: 70vw;
     height: 15vh;
   }
+
+  .logo_incio_sesion {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 457px) {
   .link_legal {
     flex-direction: column;
+  }
+  .logo_incio_sesion {
+    margin-bottom: 5px;
+  }
+
+  .inicio_sesion_text {
+    margin-bottom: 20px;
   }
 }

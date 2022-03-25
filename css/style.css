@@ -276,7 +276,15 @@ p {
   font: normal 20px "Halant", serif;
   color: white; }
 
+.crear_usuario_text {
+  font: normal 20px "Halant", serif;
+  color: white; }
+
 .inicio_sesion_title {
+  font: bold 20px "Poppins", sans-serif;
+  color: white; }
+
+.crear_usuario_title {
   font: bold 20px "Poppins", sans-serif;
   color: white; }
 
@@ -289,7 +297,10 @@ p {
   .form_search::placeholder {
     font: normal 16px "Halant", serif; }
   .form_submit {
-    font: normal 16px "Halant", serif; } }
+    font: normal 16px "Halant", serif; }
+  .link_legal_a_incio_sesion {
+    font: normal 16px "Halant", serif;
+    color: white; } }
 
 .popup {
   width: 100%;
@@ -730,16 +741,22 @@ input:focus {
 @media (max-width: 960px) {
   .formulario_inicio_sesion {
     width: 70vw;
-    height: 50vh;
+    height: 70vh;
     align-items: center;
     justify-content: center; }
   .crear_cuenta {
     width: 70vw;
-    height: 15vh; } }
+    height: 15vh; }
+  .logo_incio_sesion {
+    margin-bottom: 20px; } }
 
 @media (max-width: 457px) {
   .link_legal {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .logo_incio_sesion {
+    margin-bottom: 5px; }
+  .inicio_sesion_text {
+    margin-bottom: 20px; } }
 
 .crear_usuario {
   width: 100vw;
@@ -760,6 +777,12 @@ input:focus {
   left: 0;
   right: 0;
   background-color: #6d0005dd; }
+
+.crear_usuario_title {
+  margin-bottom: 10px; }
+
+.crear_usuario_text {
+  margin-bottom: 20px; }
 
 *,
 *:before,

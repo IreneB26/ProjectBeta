@@ -1,7 +1,7 @@
 .carrito {
   width: 50vw;
   height: 100vh;
-  background-color: $text_grey;
+  background-color: $color_principal;
   position: fixed;
 
   justify-content: flex-start;
@@ -25,21 +25,42 @@
 
 .cerrar_carrito {
   display: none;
-  color: white;
-  background-color: #004173;
+  color: $color_principal;
+  background-color: $text_grey;
   border: none;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
-  margin-left: 80%;
+  margin-left: 85%;
 }
 
 .cerrar_carrito:hover {
   background-color: $detail;
+  cursor: pointer;
 }
 
 .cerrar_carrito_visible {
   display: block;
+}
+
+.titulo_carrito {
+  margin-top: 50px;
+}
+
+.titulo_carrito:hover {
+  color: $detail;
+}
+
+.hr_title_cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hr_cart {
+  width: 85%;
 }
 
 @media (max-width: 768px) {

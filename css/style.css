@@ -291,6 +291,10 @@ p {
 .boton_sesion {
   font: normal 16px "Halant", serif; }
 
+.titulo_carrito {
+  font: bold 30px "Poppins", sans-serif;
+  color: white; }
+
 @media (max-width: 768px) {
   h1 {
     font: bold 40px "Poppins", sans-serif; }
@@ -300,7 +304,9 @@ p {
     font: normal 16px "Halant", serif; }
   .link_legal_a_incio_sesion {
     font: normal 16px "Halant", serif;
-    color: white; } }
+    color: white; }
+  .titulo_carrito {
+    font: bold 20px "Poppins", sans-serif; } }
 
 .popup {
   width: 100%;
@@ -787,7 +793,7 @@ input:focus {
 .carrito {
   width: 50vw;
   height: 100vh;
-  background-color: #dcdcdc;
+  background-color: #004173;
   position: fixed;
   justify-content: flex-start;
   flex-direction: column;
@@ -804,19 +810,36 @@ input:focus {
 
 .cerrar_carrito {
   display: none;
-  color: white;
-  background-color: #004173;
+  color: #004173;
+  background-color: #dcdcdc;
   border: none;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
-  margin-left: 80%; }
+  margin-left: 85%; }
 
 .cerrar_carrito:hover {
-  background-color: #0cb7f2; }
+  background-color: #0cb7f2;
+  cursor: pointer; }
 
 .cerrar_carrito_visible {
   display: block; }
+
+.titulo_carrito {
+  margin-top: 50px; }
+
+.titulo_carrito:hover {
+  color: #0cb7f2; }
+
+.hr_title_cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.hr_cart {
+  width: 85%; }
 
 @media (max-width: 768px) {
   .carrito {

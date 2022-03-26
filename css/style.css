@@ -330,7 +330,7 @@ p {
   height: 40vh;
   opacity: 0;
   border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   transition: opacity 0.3s ease-in-out; }
 
 .bg_card:hover {
@@ -784,6 +784,46 @@ input:focus {
 .crear_usuario_text {
   margin-bottom: 20px; }
 
+.carrito {
+  width: 50vw;
+  height: 100vh;
+  background-color: #dcdcdc;
+  position: fixed;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  right: 0;
+  padding: 20px 0;
+  overflow-y: auto;
+  left: 100%;
+  transition: left 0.9s;
+  z-index: 4; }
+
+.carrito_visible {
+  left: 50%; }
+
+.cerrar_carrito {
+  display: none;
+  color: white;
+  background-color: #004173;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 80%; }
+
+.cerrar_carrito:hover {
+  background-color: #0cb7f2; }
+
+.cerrar_carrito_visible {
+  display: block; }
+
+@media (max-width: 768px) {
+  .carrito {
+    width: 100vw; }
+  .carrito_visible {
+    left: 0px; } }
+
 *,
 *:before,
 *:after {
@@ -792,10 +832,6 @@ input:focus {
   box-sizing: border-box; }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   scroll-behavior: smooth; }
 
 a {
@@ -917,7 +953,6 @@ input:focus {
 
 .section3 {
   margin-top: 100px;
-  width: 90vw;
   display: flex;
   align-items: center;
   justify-content: center; }

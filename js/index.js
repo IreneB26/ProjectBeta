@@ -12,10 +12,27 @@ const footer = document.querySelector(".footer");
 
 
 
+const a_carrito = document.querySelector(".icon_carrito");
+
+const carrito = document.querySelector(".carrito");
+
+
+const cerrar_carrito = document.querySelector(".cerrar_carrito");
 
 
 
+a_carrito.addEventListener("click", () =>{
+   carrito.classList.toggle("carrito_visible");
 
+   cerrar_carrito.classList.toggle("cerrar_carrito_visible");
+
+cerrar_carrito.addEventListener("click", () =>{
+    carrito.classList.remove("carrito_visible");
+ 
+    cerrar_carrito.classList.remove("cerrar_carrito_visible");
+})
+
+})
 
 
 // funcion abrir boton al click menu hamburguesa

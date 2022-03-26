@@ -8,6 +8,7 @@
 @import "_form.scss";
 @import "inicio-sesion.scss";
 @import "crear-usuario.scss";
+@import "carrito.scss";
 
 *,
 *:before,
@@ -19,10 +20,10 @@
 
 body {
   // margin-top: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
   scroll-behavior: smooth;
 }
 
@@ -173,7 +174,7 @@ input:focus {
 
 .section3 {
   margin-top: 100px;
-  width: 90vw;
+  // width: 90vw;
   display: flex;
   align-items: center;
   justify-content: center;

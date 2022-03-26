@@ -4,7 +4,11 @@ include('components-php/header.php');
 
 
 <body>
+    <div class="carrito">
+        <button class="cerrar_carrito">close</button>
 
+
+    </div>
 
     <div class="popup_after"></div>
 

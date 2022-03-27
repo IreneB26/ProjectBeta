@@ -58,7 +58,7 @@ include('components-php/header.php');
         echo "<h1>Categorias</h1><br>";
         echo "<ul class='contain_cat'>
     <li class='cat'>
-    <a class='button_cat' href=''> Todos los productos &nbsp</a></li>";
+    <a class='button_cat btn1' href=''> Todos los productos &nbsp</a></li>";
 
 
 
@@ -66,8 +66,7 @@ include('components-php/header.php');
             $id_cat = $row['id_cat'];
             $categoria = $row['categoria'];
 
-            echo " &nbsp";
-            echo "<li class='cat'><a class='button_cat' data-id='$id_cat' href=''>$categoria</a>
+            echo "<li class='cat'><a class='button_cat btn2' data-id='$id_cat' href=''>$categoria</a>
         </li>";
 
             // cierro while
@@ -85,10 +84,10 @@ include('components-php/header.php');
                     $.ajax({
                         type: "GET",
                         async: true,
-                        url: "productos.php?id_cat=" + id,
+                        url: "./components-php/productos.php?id_cat=" + id,
                         cache: false,
                         success: function(response) {
-                            $('#todo').html(response);
+                            $('#section3').html(response);
 
                         },
                         error: function(error) {
@@ -109,9 +108,9 @@ include('components-php/header.php');
                     $.ajax({
                         type: "GET",
                         cache: false,
-                        url: "productos.php",
+                        url: "./components-php/productos.php",
                         success: function(response) {
-                            $('#todo').html(response);
+                            $('#section3').html(response);
 
                         }
 
@@ -127,15 +126,14 @@ include('components-php/header.php');
 
     <!-- ----------------------------- -->
 
+
     <section class="section3">
 
         <!-- <div class="pop"> </div> -->
 
 
 
-
         <?php include('components-php/cards.php'); ?>
-
 
 
     </section>
@@ -189,6 +187,11 @@ include('components-php/header.php');
     include('components-php/footer.php');
 
     ?>
+
+
+
+
+
 
 </body>
 

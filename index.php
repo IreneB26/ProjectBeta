@@ -46,18 +46,82 @@ include('components-php/header.php');
     <!-- -------------------------- -->
 
     <section class="section2">
-        <h1>Categorías</h1>
 
-        <ul class="contain_cat">
+        <?php
+        include("/components-php/data-php/Conecta.php");
+        $link = Conectarse();
 
-            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
-            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
-            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
-            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
-            <li class="cat"><a class="button_cat" href=""> Deporte </a></li>
+        // recorro bd y saco categorias e id
+        $result = mysqli_query($link, "SELECT * FROM categoria");
 
+        // titulo
+        echo "<h1>Categorias</h1><br>";
+        echo "<ul class='contain_cat'>
+    <li class='cat'>
+    <a class='button_cat' href=''> Todos los productos &nbsp</a></li>";
+
+
+
+        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+            $id_cat = $row['id_cat'];
+            $categoria = $row['categoria'];
+
+            echo " &nbsp";
+            echo "<li class='cat'><a class='button_cat' data-id='$id_cat' href=''>$categoria</a>
+        </li>";
+
+            // cierro while
+        } ?>
 
         </ul>
+
+
+        <script>
+            $(document).ready(function() {
+                $('.btn1').on('click', function() {
+
+                    var id = $(this).attr('data-id');
+
+                    $.ajax({
+                        type: "GET",
+                        async: true,
+                        url: "productos.php?id_cat=" + id,
+                        cache: false,
+                        success: function(response) {
+                            $('#todo').html(response);
+
+                        },
+                        error: function(error) {
+                            console.log('Error ${error}')
+                        }
+
+                    });
+                    return false;
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $('.btn2').on('click', function() {
+
+
+                    $.ajax({
+                        type: "GET",
+                        cache: false,
+                        url: "productos.php",
+                        success: function(response) {
+                            $('#todo').html(response);
+
+                        }
+
+                    });
+                    return false;
+                });
+            });
+        </script>
+
+
 
     </section>
 

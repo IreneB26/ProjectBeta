@@ -1,6 +1,9 @@
 <?php
-include('data-php/Conecta.php');
-$link = Conectarse();
+// include('data-php/Conecta.php');
+// $link = Conectarse();
+
+
+$_SESSION["shopping_cart"];
 
 //$connect = mysqli_connect("localhost", "root", "", "proyecto_gs");
 ?>
@@ -76,7 +79,7 @@ $link = Conectarse();
 
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="tienda.php">Tienda</a></li>
+                            <li class="breadcrumb-item"><a href="../index.php">Tienda</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Carrito</li>
                         </ol>
                     </nav>

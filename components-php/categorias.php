@@ -1,6 +1,6 @@
 <?php
 // include('data-php/Conecta.php');
-$link = Conectarse();
+// $link = Conectarse();
 
 // recorro bd y saco categorias e id
 // recorro bd y saco categorias e id

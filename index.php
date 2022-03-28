@@ -84,7 +84,7 @@ include('components-php/header.php');
                         url: "./components-php/productos.php?id_cat=" + id,
                         cache: false,
                         success: function(response) {
-                            $('#todo').html(response);
+                            $('#section3').html(response);
 
                         },
                         error: function(error) {
@@ -107,7 +107,7 @@ include('components-php/header.php');
                         cache: false,
                         url: "./components-php/productos.php",
                         success: function(response) {
-                            $('#todo').html(response);
+                            $('#section3').html(response);
 
                         }
 
@@ -124,20 +124,15 @@ include('components-php/header.php');
     <!-- ----------------------------- -->
 
 
-    <section class="section3">
+    <section class="section3" id="section3">
 
         <!-- <div class="pop"> </div> -->
-        <div id='todo'>
 
-            <?php
+        <?php
 
-            include('./components-php/cards.php')
+        include('./components-php/cards.php')
 
-            ?>
-        </div>
-
-
-
+        ?>
 
 
     </section>

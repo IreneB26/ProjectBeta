@@ -54,7 +54,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <?php session_start();
             if (isset($_SESSION['user'])) { ?><form class="form_card" method="post" action="./components-php/carrito.php?action=add&id=<?php echo "$id"; ?>"><?php } else {
-                                                                                                                                                                echo '<form class="form_card"  method="post" action="../inicio_sesion.php">';
+                                                                                                                                                                echo '<form class="form_card"  method="post" action="./inicio_sesion.php">';
                                                                                                                                                             } ?>
 
                 <!-- <form class="form_card" method="post" action="tienda.php?action=add&id=<?php echo "$id"; ?>"> -->

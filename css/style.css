@@ -295,6 +295,22 @@ p {
   font: bold 30px "Poppins", sans-serif;
   color: white; }
 
+.titulo_carrito_detalles {
+  font: bold 30px "Poppins", sans-serif;
+  color: white; }
+
+th {
+  font: bold 20px "Poppins", sans-serif;
+  color: #0cb7f2; }
+
+td {
+  font: normal 20px "Halant", serif;
+  color: white; }
+
+.button_quitar {
+  font: bold 20px "Poppins", sans-serif;
+  color: white; }
+
 @media (max-width: 768px) {
   h1 {
     font: bold 40px "Poppins", sans-serif; }
@@ -306,7 +322,16 @@ p {
     font: normal 16px "Halant", serif;
     color: white; }
   .titulo_carrito {
-    font: bold 20px "Poppins", sans-serif; } }
+    font: bold 20px "Poppins", sans-serif; }
+  .titulo_carrito_detalles {
+    font: bold 20px "Poppins", sans-serif; }
+  th {
+    font: bold 16px "Poppins", sans-serif;
+    color: white; }
+  .button_quitar {
+    font: bold 16px "Poppins", sans-serif; }
+  td {
+    font: normal 16px "Halant", serif; } }
 
 .popup {
   width: 100%;
@@ -839,6 +864,19 @@ input:focus {
   margin-top: 50px; }
 
 .titulo_carrito:hover {
+  color: #0cb7f2; }
+
+.titulo_carrito_detalles {
+  margin-top: 50px;
+  text-align: center; }
+
+.table_cart {
+  margin-top: 30px; }
+
+td {
+  text-align: center; }
+
+.button_quitar:hover {
   color: #0cb7f2; }
 
 .hr_title_cart {

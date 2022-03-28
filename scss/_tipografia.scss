@@ -137,6 +137,27 @@ p {
   color: white;
 }
 
+.titulo_carrito_detalles {
+  font: bold 30px $titulos;
+  color: white;
+}
+
+th{
+  font: bold 20px $titulos;
+  color: $detail;
+}
+
+td{
+  font: normal 20px $texto;
+  color: white;
+}
+
+.button_quitar{
+  font: bold 20px $titulos;
+  color: white;
+}
+
+
 @media (max-width: 768px) {
   h1 {
     font: bold 40px $titulos;
@@ -157,5 +178,21 @@ p {
 
   .titulo_carrito {
     font: bold 20px $titulos;
+  }
+
+  .titulo_carrito_detalles {
+    font: bold 20px $titulos;
+  }
+
+  th{
+    font: bold 16px $titulos;
+    color: white;
+  }
+  .button_quitar{
+    font: bold 16px $titulos;
+  }
+
+  td{
+    font: normal 16px $texto;
   }
 }

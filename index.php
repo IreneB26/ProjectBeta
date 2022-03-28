@@ -56,9 +56,9 @@ include('components-php/header.php');
         $result = mysqli_query($link, "SELECT * FROM categoria");
 
         // titulo
-        echo "<h3>Categorias</h3><br>";
+        echo "<h1>Categorias</h1>";
         echo "<ul class='contain_cat'>
-        <li class='cat'><a class='btn2 button_cat' href=''>&#8226 Todos los productos &nbsp</a></li>";
+        <li class='cat'><a class='btn2 button_cat' href=''> Todos los productos &nbsp</a></li>";
 
 
 
@@ -66,12 +66,11 @@ include('components-php/header.php');
             $id_cat = $row['id_cat'];
             $categoria = $row['categoria'];
 
-            echo "&#8226 &nbsp";
             echo "<li class='cat'><a class='btn1 button_cat' data-id='$id_cat' href=''>$categoria</a></li>";
-            echo "&nbsp ";
         }
         ?>
 
+        </ul>
 
         <script>
             $(document).ready(function() {

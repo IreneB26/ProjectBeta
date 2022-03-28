@@ -1,6 +1,6 @@
 
 
- 
+
 
 // mobile menu
 
@@ -19,52 +19,62 @@ const carrito = document.querySelector(".carrito");
 
 const cerrar_carrito = document.querySelector(".cerrar_carrito");
 
+const enlace_carrito_vacio = document.querySelector(".enlace_carrito");
 
 
-a_carrito.addEventListener("click", () =>{
-   carrito.classList.toggle("carrito_visible");
 
-   cerrar_carrito.classList.toggle("cerrar_carrito_visible");
 
-cerrar_carrito.addEventListener("click", () =>{
+
+a_carrito.addEventListener("click", () => {
+  carrito.classList.toggle("carrito_visible");
+
+  cerrar_carrito.classList.toggle("cerrar_carrito_visible");
+
+  cerrar_carrito.addEventListener("click", () => {
     carrito.classList.remove("carrito_visible");
- 
+
     cerrar_carrito.classList.remove("cerrar_carrito_visible");
-})
+  })
+
+  enlace_carrito_vacio.addEventListener("click", () => {
+    carrito.classList.remove("carrito_visible");
+
+    cerrar_carrito.classList.remove("cerrar_carrito_visible");
+  })
 
 })
 
 
 // funcion abrir boton al click menu hamburguesa
-navToggle.addEventListener("click", () =>{
-    navMenu.classList.toggle("nav-menu_visible");
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
 
-// icono cambiar al pulsar toogle 
-    if(navMenu.classList.contains("nav-menu_visible")){
-        icon.setAttribute("class", "fas fa-times icon");
-    }else{
-        icon.setAttribute("class", "fas fa-bars icon");
-    }
-
-
-// icono cambiar al pulsar seccion
-
- $(".nav-menu").find("a").click(function(){
-  $(".icon").removeClass('fas fa-times')
-  $(".icon").addClass('fas fa-bars')
-})
+  // icono cambiar al pulsar toogle 
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    icon.setAttribute("class", "fas fa-times icon");
+  } else {
+    icon.setAttribute("class", "fas fa-bars icon");
+  }
 
 
+  // icono cambiar al pulsar seccion
+
+  $(".nav-menu").find("a").click(function () {
+    $(".icon").removeClass('fas fa-times')
+    $(".icon").addClass('fas fa-bars')
+  })
 
 
 
 
-// cambio de aria label menu 
-    if(navMenu.classList.contains("nav-menu_visible")){
-        navToggle.setAttribute("aria-label", "Cerrar menú");
-    }else{
-        navToggle.setAttribute("aria-label", "Abrir menú");
-    }
+
+
+  // cambio de aria label menu 
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    navToggle.setAttribute("aria-label", "Cerrar menú");
+  } else {
+    navToggle.setAttribute("aria-label", "Abrir menú");
+  }
 
 
 });
@@ -72,40 +82,40 @@ navToggle.addEventListener("click", () =>{
 
 
 // marcar pagina activa
-$(".nav-menu").find("a").click(function(){
-    $(".nav-menu a").removeClass('nav-menu-link-active')
-    $(this).addClass('nav-menu-link-active')
-  })
+$(".nav-menu").find("a").click(function () {
+  $(".nav-menu a").removeClass('nav-menu-link-active')
+  $(this).addClass('nav-menu-link-active')
+})
 
 
 
-  // cerrar menu movil al ir a una seccion
-  $(".nav-menu").find("a").click(function(){
-    $(".nav-menu").removeClass('nav-menu_visible')
-    $(this).addClass('nav-menu_visible')
-  })
+// cerrar menu movil al ir a una seccion
+$(".nav-menu").find("a").click(function () {
+  $(".nav-menu").removeClass('nav-menu_visible')
+  $(this).addClass('nav-menu_visible')
+})
 
 
-  
 
-  const categoria = document.querySelectorAll(".footer_iz");
 
-  categoria.forEach(function(button_cat) {
-    button_cat.addEventListener('click', function(e) {
-        button_cat.classList.toggle("active_button");
-    });
+const categoria = document.querySelectorAll(".footer_iz");
+
+categoria.forEach(function (button_cat) {
+  button_cat.addEventListener('click', function (e) {
+    button_cat.classList.toggle("active_button");
+  });
 });
 
 
-  
 
 
- 
+
+
 
 // animación menu al bajar
 
 
-$(document).scroll(function() {
+$(document).scroll(function () {
   navbarScroll();
 });
 
@@ -119,9 +129,9 @@ function navbarScroll() {
 }
 
 
-  
-  
-  
+
+
+
 
 
 

@@ -147,7 +147,7 @@ $link = Conectarse();
         <?php } else { ?>
 
             <div class="hr_title_cart">
-                <a href="tienda.php">
+                <a class="enlace_carrito" href="#section3">
                     <h3 class="titulo_carrito">Tu carrito está vacio.</h3>
                 </a>
                 <hr class="hr_cart">

@@ -1,6 +1,10 @@
 <?php
 
+include('header.php');
 
+include('data-php/Conecta.php');
+
+$link = Conectarse();
 // recorro bd y saco categorias e id
 $result = mysqli_query($link, "SELECT * FROM categoria");
 

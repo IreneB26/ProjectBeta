@@ -1,6 +1,10 @@
 <?php
+include('./components-php/header.php');
 
 
+
+include('./components-php/data-php/Conecta.php');
+$link = Conectarse();
 // recorro bd y saco categorias e id
 $result = mysqli_query($link, "SELECT * FROM categoria");
 
@@ -30,7 +34,7 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $.ajax({
                 type: "GET",
                 async: true,
-                url: "productos.php?id_cat=" + id,
+                url: "./components-php/productos.php?id_cat=" + id,
                 cache: false,
                 success: function(response) {
                     $('#todo').html(response);
@@ -54,7 +58,7 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $.ajax({
                 type: "GET",
                 cache: false,
-                url: "productos.php",
+                url: "./components-php/productos.php",
                 success: function(response) {
                     $('#todo').html(response);
 
@@ -68,99 +72,16 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
 
 
-<?php
 
-// echo "<TABLE border=0>";
-// echo "<TR>";
-// echo "<TD>" ."<li><a href=tienda.php?id_cat=$id_cat>$categoria</a></li>" . "</TD>";
-// echo "</TR>";
-
-// echo "</TABLE>";
-
-
-
-// cierro while
-?>
 
 <!-- cardsss -->
 <div id='todo'>
 
     <?php
 
-    $_SESSION["shopping_cart"];
+    include('./components-php/cards.php')
 
-
-
-
-
-
-    // si hay categoria muesra producto segun esta
-    if (isset($_GET["id_cat"])) {
-        $id_cat = $_GET['id_cat'];
-        $query = "SELECT * FROM tbl_product WHERE id_cat='$id_cat' ORDER BY name ASC";
-    } else {
-        $query = "SELECT * FROM tbl_product ORDER BY price ASC";
-    }
-
-
-
-    $result = mysqli_query($link, $query);
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_array($result)) {
     ?>
-
-
-
-
-
-
-
-
-            <?php session_start();
-            if (isset($_SESSION['user'])) { ?><form method="post" action="carrito.php?action=add&id=<?php echo $row["id"]; ?>"><?php } else {
-                                                                                                                                echo '<form  method="post" action="iniciosesion.php">';
-                                                                                                                            } ?>
-
-
-
-                <figure style="background-image:url('imagenes/<?php echo "$imagen"; ?>');" class="bg_card">
-
-                    <form method=" post" action="tienda.php?action=add&id=<?php echo $row["id"]; ?>">
-
-
-
-                        <article class=" inf_card">
-
-
-
-                            <div class="parafos_card">
-                                <p class="title_card"> concierto viveros <?php echo $row["name"] ?></p>
-                                <p>valecnia <?php echo $row["price"]; ?></p>
-                                <p>€ <?php echo $row["price"]; ?></p>
-
-
-                                <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />
-                                <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
-                            </div>
-
-
-                            <input class="input_card" type="number" name="quantity" min="0" placeholder="Número de entradas">
-                            <div class="contain_form_buttons">
-                                <button type="submit" name="add_to_cart" class="submit_card">comprar</button>
-                                <button class="ver_mas">Ver más</button>
-                            </div>
-
-                    </form>
-
-                    </article>
-
-                </figure>
-
-        <?php
-        }
-    }
-
-        ?>
 </div>
 
 
@@ -169,3 +90,33 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
 
 <!-- Estilos -->
+
+
+
+
+
+
+
+
+
+
+
+
+// titulo
+echo "<h1>Categorias</h1><br>";
+echo "<ul class='contain_cat'>
+    <li class='cat'>
+        <a class='button_cat btn1' href=''> Todos los productos &nbsp</a>
+    </li>";
+
+
+
+    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+    $id_cat = $row['id_cat'];
+    $categoria = $row['categoria'];
+
+    echo "<li class='cat'><a class='button_cat btn2' data-id='$id_cat' href=''>$categoria</a>
+    </li>";
+
+    // cierro while
+    } ?>

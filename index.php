@@ -52,13 +52,13 @@ include('components-php/header.php');
         $link = Conectarse();
 
         // recorro bd y saco categorias e id
+        // recorro bd y saco categorias e id
         $result = mysqli_query($link, "SELECT * FROM categoria");
 
         // titulo
-        echo "<h1>Categorias</h1><br>";
+        echo "<h3>Categorias</h3><br>";
         echo "<ul class='contain_cat'>
-    <li class='cat'>
-    <a class='button_cat btn1' href=''> Todos los productos &nbsp</a></li>";
+        <li class='cat'><a class='btn2 button_cat' href=''>&#8226 Todos los productos &nbsp</a></li>";
 
 
 
@@ -66,13 +66,11 @@ include('components-php/header.php');
             $id_cat = $row['id_cat'];
             $categoria = $row['categoria'];
 
-            echo "<li class='cat'><a class='button_cat btn2' data-id='$id_cat' href=''>$categoria</a>
-        </li>";
-
-            // cierro while
-        } ?>
-
-        </ul>
+            echo "&#8226 &nbsp";
+            echo "<li class='cat'><a class='btn1 button_cat' data-id='$id_cat' href=''>$categoria</a></li>";
+            echo "&nbsp ";
+        }
+        ?>
 
 
         <script>
@@ -87,7 +85,7 @@ include('components-php/header.php');
                         url: "./components-php/productos.php?id_cat=" + id,
                         cache: false,
                         success: function(response) {
-                            $('#section3').html(response);
+                            $('#todo').html(response);
 
                         },
                         error: function(error) {
@@ -110,7 +108,7 @@ include('components-php/header.php');
                         cache: false,
                         url: "./components-php/productos.php",
                         success: function(response) {
-                            $('#section3').html(response);
+                            $('#todo').html(response);
 
                         }
 
@@ -130,10 +128,17 @@ include('components-php/header.php');
     <section class="section3">
 
         <!-- <div class="pop"> </div> -->
+        <div id='todo'>
+
+            <?php
+
+            include('./components-php/cards.php')
+
+            ?>
+        </div>
 
 
 
-        <?php include('components-php/cards.php'); ?>
 
 
     </section>

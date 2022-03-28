@@ -45,14 +45,19 @@ if (mysqli_num_rows($result) > 0) {
         <?php
         $imagen = $row["image"];
 
-
+        $id = $row["id"];
 
         ?>
 
 
         <figure style="background-image:url('imagenes/<?php echo "$imagen"; ?>');" class="bg_card">
 
-            <form class="form_card" method=" post" action="tienda.php?action=add&id=<?php echo $row["id"]; ?>">
+            <?php session_start();
+            if (isset($_SESSION['user'])) { ?><form class="form_card" method="post" action="./components-php/carrito.php?action=add&id=<?php echo "$id"; ?>"><?php } else {
+                                                                                                                                                                echo '<form class="form_card"  method="post" action="../inicio_sesion.php">';
+                                                                                                                                                            } ?>
+
+                <!-- <form class="form_card" method="post" action="tienda.php?action=add&id=<?php echo "$id"; ?>"> -->
 
 
 
@@ -77,9 +82,9 @@ if (mysqli_num_rows($result) > 0) {
                         <button class="ver_mas">Ver más</button>
                     </div>
 
-            </form>
+                </form>
 
-            </article>
+                </article>
 
         </figure>
         <!-- </div> -->

@@ -166,8 +166,32 @@ input:focus {
   .form_submit {
     width: 20%;
   }
+
+  
 }
 
+
+
+@media (max-width: 425px) {
+  
+  .contain_cat{
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 380px) {
+  
+  .contain_cat{
+    padding-left: 5.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  .contain_cat{
+    padding-left: 8rem;
+  }
+}
 // section 3--------------------
 
 .section3 {

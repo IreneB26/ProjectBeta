@@ -145,7 +145,6 @@ input:focus {
 .button_cat {
   color: white;
   background-color: $color_principal;
-  border: 3px solid $color_principal;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -153,11 +152,10 @@ input:focus {
 
 .button_cat:hover {
   background-color: $detail;
-  border: 3px solid $detail;
 }
 
 .active_button {
-  border: 3px solid $detail;
+  background-color: $detail;
 }
 
 @media (max-width: 768px) {

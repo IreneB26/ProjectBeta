@@ -1011,17 +1011,15 @@ input:focus {
 .button_cat {
   color: white;
   background-color: #004173;
-  border: 3px solid #004173;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none; }
 
 .button_cat:hover {
-  background-color: #0cb7f2;
-  border: 3px solid #0cb7f2; }
+  background-color: #0cb7f2; }
 
 .active_button {
-  border: 3px solid #0cb7f2; }
+  background-color: #0cb7f2; }
 
 @media (max-width: 768px) {
   .form_search {

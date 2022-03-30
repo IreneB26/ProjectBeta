@@ -98,15 +98,12 @@ $(".nav-menu").find("a").click(function () {
 
 
 
-const categoria = document.querySelectorAll(".footer_iz");
-
-categoria.forEach(function (button_cat) {
-  button_cat.addEventListener('click', function (e) {
-    button_cat.classList.toggle("active_button");
-  });
-});
 
 
+$(".cat").find("a").click(function () {
+  $(".cat a").removeClass('active_button')
+  $(this).addClass('active_button')
+})
 
 
 

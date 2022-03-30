@@ -16,7 +16,7 @@
 
 
 
-$_SESSION["shopping_cart"];
+
 
 
 

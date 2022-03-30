@@ -1,7 +1,5 @@
 <?php
 include('components-php/header.php');
-include('./components-php/data-php/Conecta.php');
-$link = Conectarse();
 ?>
 
 
@@ -12,8 +10,6 @@ $link = Conectarse();
         </button>
 
         <?php
-
-
         include('components-php/carrito.php');
         ?>
 
@@ -50,7 +46,7 @@ $link = Conectarse();
         <!-- <div class="pop"> </div> -->
 
         <?php
-        $_SESSION["shopping_cart"];
+
         include('./components-php/cards.php')
 
         ?>

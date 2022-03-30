@@ -1,9 +1,9 @@
 <?php
-// include('data-php/Conecta.php');
-// $link = Conectarse();
+include('data-php/Conecta.php');
+$link = Conectarse();
 
 
-$_SESSION["shopping_cart"];
+
 
 //$connect = mysqli_connect("localhost", "root", "", "proyecto_gs");
 ?>
@@ -109,7 +109,7 @@ $_SESSION["shopping_cart"];
 
                             ?>
                                     <tr>
-                                        <td><a href="carrito.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Quitar</span></a></td>
+                                        <td><a href="./components-php/carrito.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Quitar</span></a></td>
                                         <td><?php echo $values["item_name"]; ?></td>
                                         <td><?php echo $values["item_quantity"]; ?></td>
                                         <td>€ <?php echo $values["item_price"]; ?></td>

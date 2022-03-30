@@ -2,6 +2,12 @@
   width: 30px;
   height: 30px; }
 
+.logo_mobile {
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .nav-toggle {
   color: #dcdcdc;
   background: none;
@@ -152,10 +158,8 @@
     padding: 0 30px;
     line-height: 60px; }
   .logo_mobile {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    display: block; }
+    width: auto;
+    padding: 5px; }
   .img_logo {
     display: none; }
   .nav-menu {
@@ -264,10 +268,6 @@ p {
   font: normal 20px "Halant", serif;
   color: #004173; }
 
-.logo_incio_sesion {
-  font: bold 50px "Poppins", sans-serif;
-  color: white; }
-
 .formulario_inicio_sesion {
   font: normal 20px "Halant", serif;
   color: white; }
@@ -296,6 +296,10 @@ p {
   color: white; }
 
 .titulo_carrito_detalles {
+  font: bold 30px "Poppins", sans-serif;
+  color: white; }
+
+.logo_mobile {
   font: bold 30px "Poppins", sans-serif;
   color: white; }
 
@@ -583,6 +587,9 @@ input:focus {
 .link_legal_a:hover {
   color: #0cb7f2; }
 
+.footer_logo {
+  margin-top: 5px; }
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column; }
@@ -707,7 +714,7 @@ input:focus {
   background-color: #004173dd; }
 
 .logo_incio_sesion {
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
 
 .inicio_sesion_title {
   margin-bottom: 30px; }
@@ -783,8 +790,9 @@ input:focus {
   align-items: center;
   justify-content: center; }
 
-.logo_incio_sesion:hover {
-  font-size: 80px; }
+.crear-usuario:hover {
+  width: 15vw;
+  height: 15vh; }
 
 @media (max-width: 960px) {
   .formulario_inicio_sesion {
@@ -831,6 +839,28 @@ input:focus {
 
 .crear_usuario_text {
   margin-bottom: 20px; }
+
+.crear-usuario {
+  width: 13vw;
+  height: 13vh; }
+
+@media (max-width: 950px) {
+  .crear-usuario {
+    width: 12vw;
+    height: 12vh;
+    margin-top: 20px; } }
+
+@media (max-width: 700px) {
+  .crear-usuario {
+    width: 14vw;
+    height: 14vh;
+    margin-top: 20px; } }
+
+@media (max-width: 700px) {
+  .crear-usuario {
+    width: 20vw;
+    height: 20vh;
+    margin-top: 20px; } }
 
 .carrito {
   width: 50vw;

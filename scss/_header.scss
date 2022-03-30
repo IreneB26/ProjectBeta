@@ -5,6 +5,21 @@
   height: 30px;
 }
 
+.logo_mobile{
+  width: 10vw;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+  // padding: 5px;
+
+
+
+  
+
+}
+
 .nav-toggle {
   color: #dcdcdc;
   background: none;
@@ -214,10 +229,9 @@
   }
 
   .logo_mobile {
-    width: 50px;
-    height: 50px;
+    width: auto;
     padding: 5px;
-    display: block;
+  
   }
 
   .img_logo {

@@ -97,7 +97,7 @@ $(".nav-menu").find("a").click(function () {
 
 
 
-
+// categoria marcar activa
 
 
 $(".cat").find("a").click(function () {

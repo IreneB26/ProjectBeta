@@ -32,3 +32,38 @@
 .crear_usuario_text {
   margin-bottom: 20px;
 }
+
+
+.crear-usuario{
+  width: 13vw;
+  height:13vh;
+}
+
+
+@media (max-width: 950px) {
+  .crear-usuario{
+    width: 12vw;
+    height:12vh;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .crear-usuario{
+    width: 14vw;
+    height:14vh;
+    margin-top: 20px;
+  }
+
+
+}
+
+@media (max-width: 700px) {
+  .crear-usuario{
+    width: 20vw;
+    height:20vh;
+    margin-top: 20px;
+  }
+
+
+}

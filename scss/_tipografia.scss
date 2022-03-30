@@ -98,10 +98,10 @@ p {
   color: $color_principal;
 }
 
-.logo_incio_sesion {
-  font: bold 50px $titulos;
-  color: white;
-}
+// .logo_incio_sesion {
+//   font: bold 50px $titulos;
+//   color: white;
+// }
 
 .formulario_inicio_sesion {
   font: normal 20px $texto;
@@ -138,6 +138,11 @@ p {
 }
 
 .titulo_carrito_detalles {
+  font: bold 30px $titulos;
+  color: white;
+}
+
+.logo_mobile{
   font: bold 30px $titulos;
   color: white;
 }

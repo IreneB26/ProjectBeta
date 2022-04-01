@@ -46,6 +46,11 @@ p {
   color: $color_principal;
 }
 
+.label {
+  font: bolde 16px $titulos;
+  color: $color_principal;
+}
+
 .social {
   font: normal 20px $texto;
   color: $text_grey;
@@ -161,6 +166,11 @@ td{
   font: bold 20px $titulos;
   color: white;
 }
+
+// .label{
+//   font: bold 20px $titulos;
+//   color: white;
+// }
 
 .question{
   font: bold 20px $titulos;

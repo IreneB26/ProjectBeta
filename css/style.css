@@ -4,6 +4,7 @@
 
 .logo_mobile {
   width: 10vw;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -158,7 +159,9 @@
     padding: 0 30px;
     line-height: 60px; }
   .logo_mobile {
-    width: auto;
+    width: 65px;
+    height: 65px;
+    margin-top: 0;
     padding: 5px; }
   .img_logo {
     display: none; }
@@ -227,6 +230,10 @@ p {
 
 .input {
   font: normal 16px "Halant", serif;
+  color: #004173; }
+
+.label {
+  font: bolde 16px "Poppins", sans-serif;
   color: #004173; }
 
 .social {
@@ -391,7 +398,8 @@ td {
   height: 75%; }
 
 .inf_card {
-  width: 35%;
+  min-width: 35%;
+  max-width: 50%;
   height: 75%;
   background-color: white;
   padding: 15px;
@@ -471,7 +479,8 @@ td {
 
 @media (max-width: 768px) {
   .inf_card {
-    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
     height: 70%;
     margin-left: 0px; }
   .form_card {

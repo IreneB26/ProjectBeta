@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
 
-  <title>Ticket 2 you</title>
+  <title>Event Experience</title>
 </head>
 
 

@@ -252,6 +252,10 @@ p {
   font: normal 20px "Halant", serif;
   color: white; }
 
+.link_legal_a_crear_us {
+  font: normal 20px "Halant", serif;
+  color: #004173; }
+
 .input_card {
   font: normal 16px "Halant", serif; }
   .input_card::placeholder {
@@ -285,7 +289,7 @@ p {
 
 .crear_usuario_text {
   font: normal 20px "Halant", serif;
-  color: white; }
+  color: #004173; }
 
 .inicio_sesion_title {
   font: bold 20px "Poppins", sans-serif;
@@ -293,7 +297,11 @@ p {
 
 .crear_usuario_title {
   font: bold 20px "Poppins", sans-serif;
-  color: white; }
+  color: #004173; }
+
+.user_sesion {
+  font: normal 20px "Halant", serif;
+  color: #004173; }
 
 .boton_sesion {
   font: normal 16px "Halant", serif; }
@@ -326,6 +334,10 @@ td {
   font: normal 20px "Poppins", sans-serif;
   color: white; }
 
+.label_sesion_crear {
+  font: normal 20px "Poppins", sans-serif;
+  color: #004173; }
+
 .question {
   font: bold 20px "Poppins", sans-serif;
   color: #0cb7f2; }
@@ -344,6 +356,9 @@ td {
   .link_legal_a_incio_sesion {
     font: normal 16px "Halant", serif;
     color: white; }
+  .link_legal_a_crear_us {
+    font: normal 16px "Halant", serif;
+    color: #004173; }
   .titulo_carrito {
     font: bold 20px "Poppins", sans-serif; }
   .titulo_carrito_detalles {
@@ -356,6 +371,8 @@ td {
   td {
     font: normal 16px "Halant", serif; }
   .label_sesion {
+    font: normal 16px "Poppins", sans-serif; }
+  .label_sesion_crear {
     font: normal 16px "Poppins", sans-serif; } }
 
 .popup {
@@ -847,7 +864,28 @@ input:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #6d0005dd; }
+  background-color: #dcdcdcdd; }
+
+.formulario_crear_us {
+  width: 35vw;
+  height: 50vh;
+  border: 2px solid #004173;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; }
+
+.crear_cuenta_us {
+  width: 35vw;
+  height: 15vh;
+  border: 2px solid #004173;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px; }
 
 .crear_usuario_title {
   margin-bottom: 10px; }
@@ -863,7 +901,16 @@ input:focus {
   .crear-usuario {
     width: 12vw;
     height: 12vh;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .formulario_crear_us {
+    width: 70vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center; }
+  .crear_cuenta_us {
+    width: 70vw;
+    height: 15vh;
+    padding: 20px; } }
 
 @media (max-width: 700px) {
   .crear-usuario {

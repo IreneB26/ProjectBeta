@@ -71,6 +71,11 @@ p {
   color: white;
 }
 
+.link_legal_a_crear_us{
+  font: normal 20px $texto;
+  color: $color_principal;
+}
+
 // forms cards
 .input_card {
   font: normal 16px $texto;
@@ -120,7 +125,7 @@ p {
 
 .crear_usuario_text {
   font: normal 20px $texto;
-  color: white;
+  color: $color_principal;
 }
 
 .inicio_sesion_title {
@@ -130,7 +135,12 @@ p {
 
 .crear_usuario_title {
   font: bold 20px $titulos;
-  color: white;
+  color: $color_principal;
+}
+
+.user_sesion{
+  font: normal 20px $texto;
+  color: $color_principal;
 }
 
 .boton_sesion {
@@ -172,6 +182,11 @@ td{
   color: white;
 }
 
+.label_sesion_crear{
+  font: normal 20px $titulos;
+  color: $color_principal;
+}
+
 .question{
   font: bold 20px $titulos;
   color: $detail;
@@ -200,6 +215,11 @@ td{
     color: white;
   }
 
+  .link_legal_a_crear_us{
+    font: normal 16px $texto;
+    color: $color_principal;
+  }
+
   .titulo_carrito {
     font: bold 20px $titulos;
   }
@@ -222,4 +242,8 @@ td{
   .label_sesion{
     font: normal 16px $titulos;
   }
+  .label_sesion_crear{
+    font: normal 16px $titulos;
+  }
+
 }

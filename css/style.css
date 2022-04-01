@@ -247,7 +247,8 @@ p {
 
 .a_registro {
   font: normal 20px "Halant", serif;
-  color: #0cb7f2; }
+  color: #0cb7f2;
+  font-weight: 500; }
 
 .link_legal_a_incio_sesion {
   font: normal 20px "Halant", serif;

@@ -79,7 +79,7 @@ if (mysqli_num_rows($result) > 0) {
                     <input class="input_card" type="number" name="quantity" min="0" placeholder="Número de entradas">
                     <div class="contain_form_buttons">
                         <button type="submit" name="add_to_cart" class="submit_card">comprar</button>
-                        <button class="ver_mas">Ver más</button>
+                        <button type="button" class="ver_mas">Ver más</button>
                     </div>
 
                 </form>

@@ -1,14 +1,13 @@
 
 // Fonts
-$font-sans-family:sans-serif;
+
 $font-serif-family:serif;
   
 // Colors
-$header-color:#090909;
-$paragraph-color:#090909;
+$paragraph-color:$color_principal;
 
 // Facts
-$fact-question-color:$header-color;
+$fact-question-color:$detail;
 $fact-question-color-active:#808080;
 
 // Media Sizes
@@ -39,15 +38,13 @@ $mobile:"max-width:767px";
     }
   }
   .answer {
-    color:$paragraph-color;
-    font-family:$font-serif-family;
-    font-size:16px;
     line-height:24px;
     max-height:0;
     overflow:hidden;
     transition:max-height 0.5s ease, padding-bottom 0.5s ease;
   }
   .plus-minus-toggle {
+
     cursor: pointer;
     height: 21px;
     position: absolute;
@@ -58,7 +55,7 @@ $mobile:"max-width:767px";
 
     &:before,
     &:after {
-      background: #000;
+      background: $color_principal;
       content: '';
       height: 5px;
       left: 0;
@@ -83,9 +80,9 @@ $mobile:"max-width:767px";
     }
   }
   .question {
-    color:$fact-question-color;
-    font-family:$font-sans-family;
-    font-size:20px;
+   
+    
+  
     font-weight:800;
     text-transform:uppercase;
     position:relative;

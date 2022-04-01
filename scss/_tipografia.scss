@@ -162,6 +162,15 @@ td{
   color: white;
 }
 
+.question{
+  font: bold 20px $titulos;
+  color: $detail;
+}
+
+.answer{
+  font: normal 18px $texto;
+  color: $color_principal;
+}
 
 @media (max-width: 768px) {
   h1 {

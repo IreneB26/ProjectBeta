@@ -167,10 +167,10 @@ td{
   color: white;
 }
 
-// .label{
-//   font: bold 20px $titulos;
-//   color: white;
-// }
+.label_sesion{
+  font: normal 20px $titulos;
+  color: white;
+}
 
 .question{
   font: bold 20px $titulos;
@@ -218,5 +218,8 @@ td{
 
   td{
     font: normal 16px $texto;
+  }
+  .label_sesion{
+    font: normal 16px $titulos;
   }
 }

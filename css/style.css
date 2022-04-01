@@ -322,6 +322,10 @@ td {
   font: bold 20px "Poppins", sans-serif;
   color: white; }
 
+.label_sesion {
+  font: normal 20px "Poppins", sans-serif;
+  color: white; }
+
 .question {
   font: bold 20px "Poppins", sans-serif;
   color: #0cb7f2; }
@@ -350,7 +354,9 @@ td {
   .button_quitar {
     font: bold 16px "Poppins", sans-serif; }
   td {
-    font: normal 16px "Halant", serif; } }
+    font: normal 16px "Halant", serif; }
+  .label_sesion {
+    font: normal 16px "Poppins", sans-serif; } }
 
 .popup {
   width: 100%;
@@ -810,7 +816,8 @@ input:focus {
     justify-content: center; }
   .crear_cuenta {
     width: 70vw;
-    height: 15vh; }
+    height: 15vh;
+    padding: 20px; }
   .logo_incio_sesion {
     margin-bottom: 20px; } }
 

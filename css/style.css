@@ -1144,6 +1144,9 @@ td {
 body {
   scroll-behavior: smooth; }
 
+.scroll_hidden {
+  overflow: hidden; }
+
 a {
   text-decoration: none; }
 

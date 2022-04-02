@@ -18,6 +18,7 @@ function mostrarDetalles(id) {
 
     $.get(ruta, function (data) {
         $(".pop").html(data);
+        $("body").addClass("scroll_hidden");
     });
 }
 
@@ -26,6 +27,7 @@ function volverIndex() {
     var ruta = 'index.php'
     $.get(ruta, function (data) {
         $(".pop").html('');
+        $("body").removeClass("scroll_hidden");
     });
 
 }

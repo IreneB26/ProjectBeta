@@ -25,16 +25,31 @@ function mostrarDetalles(id) {
 
 function volverIndex() {
     var ruta = 'index.php'
-    $.get(ruta, function (data) {
-        $(".pop").html('');
-        $("body").removeClass("scroll_hidden");
-    });
+    $(".pop").html('');
+    $("body").removeClass("scroll_hidden");
+
 
 }
 
 
 
+function carritos(id) {
+    let cantidad = document.getElementById("cantidad").value;
 
+    var ruta = 'components-php/carrito.php?producto=' + id + '&cantidad=' + cantidad;
+
+
+    $.get(ruta, function (data) {
+        $(".carrito").html(data);
+        $(".carrito").addClass("carrito_visible");
+
+    });
+}
+
+function cerrarCarrito() {
+    $(".carrito").removeClass("carrito_visible");
+
+}
 
 
 // card.addEventListener("click", () => {

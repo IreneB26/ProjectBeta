@@ -499,7 +499,8 @@ td {
   background-color: #004173;
   margin-top: 20px;
   margin-right: 5px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  text-align: center; }
 
 .submit_card:hover {
   border: 3px solid #0cb7f2; }

@@ -11,9 +11,6 @@ include('components-php/header.php');
 
 
     <div class="carrito">
-        <button class="cerrar_carrito">
-            <i class="fas fa-times fa-lg"></i>
-        </button>
 
         <?php
         include('components-php/carrito.php');

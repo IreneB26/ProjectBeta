@@ -1,54 +1,40 @@
 <?php
 include('data-php/Conecta.php');
+
 $link = Conectarse();
 
 
+$producto = $_REQUEST['producto'];
+
+$cantidad = $_REQUEST['cantidad'];
 
 
-//$connect = mysqli_connect("localhost", "root", "", "proyecto_gs");
+
+$query = "SELECT * FROM tbl_product WHERE id='$producto'";
+
+$result = mysqli_query($link, $query);
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_array($result)) {
 ?>
-<!--  -->
-
-
-<section class="class section" id="class">
-
-    <div class="container">
-        <div class="row">
-
-            <div class="contain_header_cart">
-
-                <!-- estilos -->
 
 
 
 
-                <?php
 
-                if (isset($_POST["add_to_cart"])) {
-                    if (isset($_SESSION["shopping_cart"])) {
-                        $item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
-                        if (!in_array($_GET["id"], $item_array_id)) {
-                            $count = count($_SESSION["shopping_cart"]);
-                            $item_array = array(
-                                'item_id'            =>    $_GET["id"],
-                                'item_name'            =>    $_POST["hidden_name"],
-                                'item_price'        =>    $_POST["hidden_price"],
-                                'item_quantity'        =>    $_POST["quantity"]
-                            );
-                            $_SESSION["shopping_cart"][$count] = $item_array;
-                        } else {
-                            echo '<script>alert("Este articulo ya esta en el carrito")</script>';
-                        }
-                    } else {
-                        $item_array = array(
-                            'item_id'            =>    $_GET["id"],
-                            'item_name'            =>    $_POST["hidden_name"],
-                            'item_price'        =>    $_POST["hidden_price"],
-                            'item_quantity'        =>    $_POST["quantity"]
-                        );
-                        $_SESSION["shopping_cart"][0] = $item_array;
-                    }
-                }
+
+        <?php
+        $nombre = $row["name"];
+
+        $descripcion = $row["descripcion"];
+
+        $precio = $row["price"];
+        $lugar = $row["lugar"];
+
+
+
+
+
+        ?>
 
 
 
@@ -57,109 +43,45 @@ $link = Conectarse();
 
 
 
-                if (isset($_GET["action"])) {
-                    if ($_GET["action"] == "delete") {
-                        foreach ($_SESSION["shopping_cart"] as $keys => $values) {
-                            if ($values["item_id"] == $_GET["id"]) {
-                                unset($_SESSION["shopping_cart"][$keys]);
-                                echo '<script>alert("Articulo borrado")</script>';
-                                echo '<script>window.location="carrito.php"</script>';
-                            }
-                        }
-                    }
-                }
 
-                ?>
-
-
-
-                <div style="clear:both"></div>
-                <br />
-                <?php if (!empty($_SESSION["shopping_cart"])) { ?>
-
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="../index.php">Tienda</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Carrito</li>
-                        </ol>
-                    </nav>
-
-
-                    <h3 data-aos="fade-up" data-aos-delay="400">Detalles del pedido</h3>
-                    <hr>
-
-                    <table class="table" data-aos="fade-up" data-aos-delay="300">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th width="5%">Borrar</th>
-                                <th width="40%">Producto</th>
-                                <th width="10%">Cantidad</th>
-                                <th width="20%">Precio</th>
-                                <th width="15%">Total</th>
-
-                            </tr>
-                            <?php
-                            if (!empty($_SESSION["shopping_cart"])) {
-                                $total = 0;
-                                foreach ($_SESSION["shopping_cart"] as $keys => $values) {
-
-                                    // array productos recorrido $producto = $values['item_name'];
-
-
-
-                            ?>
-                                    <tr>
-                                        <td><a href="./components-php/carrito.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Quitar</span></a></td>
-                                        <td><?php echo $values["item_name"]; ?></td>
-                                        <td><?php echo $values["item_quantity"]; ?></td>
-                                        <td>€ <?php echo $values["item_price"]; ?></td>
-                                        <td>€ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2); ?></td>
-
-                                    </tr>
-                                <?php
-                                    $total = $total + ($values["item_quantity"] * $values["item_price"]);
-                                }
-                                ?>
-                                <tr>
-                                    <td style="border-bottom:none; boder-top:1px;" colspan="4"></td>
-                                    <td align="center">€ <?php $price = number_format($total, 2);
-                                                            echo $price ?></td>
-
-
-                                </tr>
-                            <?php
-
-                            }
-
-                            ?>
-
-
-                    </table>
-
-            </div>
-
-            <!-- metdo de pago -->
+        <button class="close" href="javascript:void(0)" onclick="cerrarCarrito();"> <i class="fas fa-times fa-lg icon"></i> </button>
 
 
 
 
-            <button class="btn btn-danger form-control" onclick="location.href='compra.php?precio=<?php echo $price; ?>'">Rellene los datos de envio</button>
-            <a href="tienda.php">Seguir comprando</a>
 
 
-        <?php } else { ?>
+        <p class="modal_description"><?php echo  $cantidad; ?></p>
+        <p class="text"> €<?php echo  $precio; ?></p>
+        <button type="button" name="add_to_cart" class="submit_card">comprar</button>
 
-            <div class="hr_title_cart">
-                <a class="enlace_carrito" href="#section3">
-                    <h3 class="titulo_carrito">Tu carrito está vacio.</h3>
-                </a>
-                <hr class="hr_cart">
-            </div>
-        <?php } ?>
-        </div>
 
-        <!-- Estilos -->
+        <table class="default">
 
-    </div>
-    </div>
-</section>
+            <tr>
+
+                <td>Celda 1</td>
+
+                <td>Celda 2</td>
+
+                <td>Celda 3</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Celda 4</td>
+
+                <td>Celda 5</td>
+
+                <td>Celda 6</td>
+
+            </tr>
+
+        </table>
+
+
+<?php
+    }
+}
+?>

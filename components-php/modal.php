@@ -39,13 +39,30 @@ if (mysqli_num_rows($result) > 0) {
 
         <div class="contain_modal">
             <div class="modal">
-                <button class="close" href="javascript:void(0)" onclick="volverIndex();"> <i class="fas fa-times fa-lg icon"></i> </button>
 
-                <h1><?php echo  $nombre; ?></h1>
+                <div style="background-image:url('imagenes/<?php echo "$imagen"; ?>');" class="img_modal">
+                </div>
 
-                <p><?php echo  $descripcion; ?></p>
-                <p> <?php echo  $precio; ?></p>
-                <p> <?php echo  $lugar; ?></p>
+
+                <div class="info_modal">
+
+                    <div class="contain_but">
+                        <button class="close" href="javascript:void(0)" onclick="volverIndex();"> <i class="fas fa-times fa-lg icon"></i> </button>
+
+                    </div>
+
+                    <div class="text_modal">
+
+
+                        <h1><?php echo  $nombre; ?></h1>
+
+                        <p><?php echo  $descripcion; ?></p>
+                        <p> <?php echo  $precio; ?></p>
+                        <p> <?php echo  $lugar; ?></p>
+                        <button type="button" name="add_to_cart" class="submit_card">comprar</button>
+
+                    </div>
+                </div>
 
             </div>
         </div>

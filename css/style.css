@@ -662,7 +662,34 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto; }
+  margin: auto;
+  background: rgba(205, 205, 205, 0.42);
+  backdrop-filter: blur(2.6px);
+  position: fixed;
+  z-index: 3;
+  overflow: hidden; }
+
+.img_modal {
+  height: 100%;
+  width: 45%;
+  background-color: red; }
+
+.info_modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 55%;
+  text-align: center;
+  padding: 10px; }
+
+.contain_but {
+  width: 100%;
+  height: 10%; }
+
+.text_modal {
+  width: 100%;
+  height: 90%; }
 
 .modal {
   background-color: #dcdcdc;
@@ -670,7 +697,8 @@ input:focus {
   width: 85vw;
   position: fixed;
   z-index: 4;
-  margin: auto; }
+  margin: auto;
+  display: flex; }
 
 .popup_after {
   position: absolute;
@@ -717,7 +745,11 @@ input:focus {
     height: 50vh;
     width: 40vh;
     margin-bottom: 20%;
-    margin-left: 0%; } }
+    margin-left: 0%; }
+  .img_modal {
+    display: none; }
+  .info_modal {
+    width: 100%; } }
 
 .form_cards {
   width: 100%;

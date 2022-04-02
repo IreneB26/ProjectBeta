@@ -4,6 +4,8 @@ include('components-php/header.php');
 
 
 <body>
+
+
     <div class="carrito">
         <button class="cerrar_carrito">
             <i class="fas fa-times fa-lg"></i>
@@ -43,7 +45,7 @@ include('components-php/header.php');
 
     <section class="section3" id="section3">
 
-        <!-- <div class="pop"> </div> -->
+        <div class="pop"> </div>
 
         <?php
 

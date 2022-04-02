@@ -66,8 +66,8 @@ if (mysqli_num_rows($result) > 0) {
 
 
                     <div class="parafos_card">
-                        <p class="title_card"> concierto viveros <?php echo $row["name"] ?></p>
-                        <p>valecnia <?php echo $row["price"]; ?></p>
+                        <p class="title_card"><?php echo $row["name"] ?></p>
+                        <p> <?php echo $row["lugar"]; ?></p>
                         <p>€ <?php echo $row["price"]; ?></p>
 
 

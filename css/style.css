@@ -197,7 +197,7 @@
 
 h1 {
   font: bold 60px "Poppins", sans-serif;
-  color: red; }
+  color: #004173; }
 
 a {
   font: bold 20px "Poppins", sans-serif; }
@@ -656,8 +656,21 @@ input:focus {
   border-radius: 5px;
   box-shadow: 0px 0px 120px 10px rgba(0, 0, 0, 0.1); }
 
-.test {
-  background-color: red; }
+.contain_modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto; }
+
+.modal {
+  background-color: #dcdcdc;
+  height: 85vh;
+  width: 85vw;
+  position: fixed;
+  z-index: 4;
+  margin: auto; }
 
 .popup_after {
   position: absolute;

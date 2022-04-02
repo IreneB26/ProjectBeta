@@ -4,6 +4,7 @@ include('components-php/header.php');
 
 
 <body>
+    <div class="pop"> </div>
 
 
     <div class="carrito">
@@ -45,7 +46,6 @@ include('components-php/header.php');
 
     <section class="section3" id="section3">
 
-        <div class="pop"> </div>
 
         <?php
 

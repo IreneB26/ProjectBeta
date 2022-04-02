@@ -76,7 +76,7 @@ if (mysqli_num_rows($result) > 0) {
                     </div>
 
 
-                    <input class="input_card" id="cantidad" type="number" name="quantity" min="0" placeholder="Número de entradas">
+                    <input class="input_card" id="cantidad" type="number" name="quantity" min="1" value="1" placeholder="Número de entradas">
                     <div class="contain_form_buttons">
                         <?php if (isset($_SESSION['user'])) { ?>
                             <button type="button" name="add_to_cart" class="submit_card" href=" javascript:void(0);" onclick='carritos(<?php echo $row["id"]  ?> )'>comprar</button>

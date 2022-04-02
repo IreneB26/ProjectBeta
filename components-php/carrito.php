@@ -60,21 +60,29 @@ if (mysqli_num_rows($result) > 0) {
 
             <tr>
 
-                <td>Celda 1</td>
+                <td>Producto</td>
 
-                <td>Celda 2</td>
+                <td>Cantidad</td>
 
-                <td>Celda 3</td>
+                <td>Precio</td>
 
             </tr>
 
             <tr>
 
-                <td>Celda 4</td>
+                <td> <?php echo  $nombre; ?> </td>
 
-                <td>Celda 5</td>
+                <td> <?php echo  $cantidad; ?> </td>
 
-                <td>Celda 6</td>
+                <td>€ <?php echo $cantidad * $precio; ?> </td>
+
+            </tr>
+
+            <tr>
+
+
+
+                <td> <?php echo  $precio; ?> </td>
 
             </tr>
 

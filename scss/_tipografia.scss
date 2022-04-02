@@ -3,10 +3,7 @@ h1 {
   color: $color_principal;
 }
 
-h4 {
-  font: bold 30px $titulos;
-  color: $detail;
-}
+
 
 a {
   font: bold 20px $titulos;
@@ -15,10 +12,19 @@ a {
 p {
   font: normal 20px $texto;
 }
+h4 {
+  font: bold 30px $titulos;
+  color: $detail;
+}
 
 .text{
   font: bold 20px $titulos;
 color: $detail;
+}
+
+.modal_description{
+  font: normal 20px $texto;
+  color: $color_principal;
 }
 
 .text_img {
@@ -257,4 +263,19 @@ td{
     font: normal 16px $titulos;
   }
 
+
+  h4 {
+    font: bold 25px $titulos;
+    color: $detail;
+  }
+  
+  .text{
+    font: bold 20px $titulos;
+  color: $detail;
+  }
+  
+  .modal_description{
+    font: normal 18px $texto;
+    color: $color_principal;
+  }
 }

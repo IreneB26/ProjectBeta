@@ -199,19 +199,23 @@ h1 {
   font: bold 60px "Poppins", sans-serif;
   color: #004173; }
 
-h4 {
-  font: bold 30px "Poppins", sans-serif;
-  color: #0cb7f2; }
-
 a {
   font: bold 20px "Poppins", sans-serif; }
 
 p {
   font: normal 20px "Halant", serif; }
 
+h4 {
+  font: bold 30px "Poppins", sans-serif;
+  color: #0cb7f2; }
+
 .text {
   font: bold 20px "Poppins", sans-serif;
   color: #0cb7f2; }
+
+.modal_description {
+  font: normal 20px "Halant", serif;
+  color: #004173; }
 
 .text_img {
   font: bold 50px "Poppins", sans-serif;
@@ -383,7 +387,16 @@ td {
   .label_sesion {
     font: normal 16px "Poppins", sans-serif; }
   .label_sesion_crear {
-    font: normal 16px "Poppins", sans-serif; } }
+    font: normal 16px "Poppins", sans-serif; }
+  h4 {
+    font: bold 25px "Poppins", sans-serif;
+    color: #0cb7f2; }
+  .text {
+    font: bold 20px "Poppins", sans-serif;
+    color: #0cb7f2; }
+  .modal_description {
+    font: normal 18px "Halant", serif;
+    color: #004173; } }
 
 .popup {
   width: 100%;
@@ -665,6 +678,7 @@ input:focus {
   box-shadow: 0px 0px 120px 10px rgba(0, 0, 0, 0.1); }
 
 .contain_modal {
+  display: none;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -676,6 +690,9 @@ input:focus {
   position: fixed;
   z-index: 3;
   overflow: hidden; }
+
+.pop_up_visible {
+  display: block; }
 
 .img_modal {
   height: 100%;
@@ -699,7 +716,11 @@ input:focus {
 
 .text_modal {
   width: 100%;
-  height: 90%; }
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column; }
 
 .modal {
   background-color: white;

@@ -61,7 +61,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-                <article class=" inf_card">
+                <article class="inf_card">
 
 
 

@@ -21,6 +21,15 @@ function mostrarDetalles(id) {
     });
 }
 
+
+function volverIndex() {
+    var ruta = 'index.php'
+    $.get(ruta, function (data) {
+        $("body").html(data);
+    });
+
+}
+
 // card.addEventListener("click", () => {
 //     body.style.overflow = 'hidden';
 

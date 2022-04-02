@@ -20,9 +20,11 @@ if (mysqli_num_rows($result) > 0) {
 
 
         <?php
-        $imagen = $row["name"];
+        $nombre = $row["name"];
 
-        $id = $row["id"];
+        $descripcion = $row["descripcion"];
+
+
 
         ?>
 
@@ -30,8 +32,9 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-        <div style="background-color:red;" class="test">
-            <p><?php echo  $imagen; ?></p>
+        <div class="test">
+            <button class="close" href="javascript:void(0)" onclick="volverIndex();"> <i class="fas fa-times fa-lg icon"></i> </button>
+            <p><?php echo  $nombre; ?></p>
         </div>
 
 <?php

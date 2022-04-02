@@ -31,6 +31,9 @@
 height: 100%;
 width: 45%;
 background-color: red;
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+
 }
 
 .info_modal{
@@ -53,13 +56,14 @@ background-color: red;
 }
 
 .modal{
-  background-color: $text_grey;
+  background-color: white;
   height: 85vh;
   width: 85vw;
   position: fixed;
   z-index: 4;
   margin: auto;
   display: flex;
+  border-radius: 8px;
 
 }
 

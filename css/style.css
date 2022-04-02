@@ -199,11 +199,19 @@ h1 {
   font: bold 60px "Poppins", sans-serif;
   color: #004173; }
 
+h4 {
+  font: bold 30px "Poppins", sans-serif;
+  color: #0cb7f2; }
+
 a {
   font: bold 20px "Poppins", sans-serif; }
 
 p {
   font: normal 20px "Halant", serif; }
+
+.text {
+  font: bold 20px "Poppins", sans-serif;
+  color: #0cb7f2; }
 
 .text_img {
   font: bold 50px "Poppins", sans-serif;
@@ -672,7 +680,9 @@ input:focus {
 .img_modal {
   height: 100%;
   width: 45%;
-  background-color: red; }
+  background-color: red;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; }
 
 .info_modal {
   display: flex;
@@ -692,13 +702,14 @@ input:focus {
   height: 90%; }
 
 .modal {
-  background-color: #dcdcdc;
+  background-color: white;
   height: 85vh;
   width: 85vw;
   position: fixed;
   z-index: 4;
   margin: auto;
-  display: flex; }
+  display: flex;
+  border-radius: 8px; }
 
 .popup_after {
   position: absolute;

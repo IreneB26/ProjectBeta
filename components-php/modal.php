@@ -54,11 +54,11 @@ if (mysqli_num_rows($result) > 0) {
                     <div class="text_modal">
 
 
-                        <h1><?php echo  $nombre; ?></h1>
+                        <h4><?php echo  $nombre; ?></h4>
 
                         <p><?php echo  $descripcion; ?></p>
-                        <p> <?php echo  $precio; ?></p>
-                        <p> <?php echo  $lugar; ?></p>
+                        <p class="text"> €<?php echo  $precio; ?></p>
+                        <p class="text"> <?php echo  $lugar; ?></p>
                         <button type="button" name="add_to_cart" class="submit_card">comprar</button>
 
                     </div>

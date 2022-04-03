@@ -1,7 +1,7 @@
 .container_pago{
     background-color: $text_grey;
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,21 +26,31 @@ flex-direction: column;
     color: $color_principal;
     border: none;
     padding: 2px;
-    height: 30px;
+    height: 30px;   
 
-    
-    
+}
 
+
+
+.boton_pago{
+    width: 100%;
+    margin: 5px;
+}
+
+
+.titles_pago{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .email_number{
     display: flex;
 }
 
-.boton_pago{
-    width: 100%;
-    margin: 5px;
-}
 
 
 
@@ -60,3 +70,22 @@ display: flex;
     justify-content: space-around;
 }
 
+
+@media (max-width: 768px) {
+
+    .formulario_pago{
+        margin-top:110px;
+        margin-bottom:50px;
+    
+    width: 80%;
+    height: 100%;
+    
+    }
+
+    .titles_pago{
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    
+}

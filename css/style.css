@@ -275,6 +275,9 @@ h4 {
   .input_card::placeholder {
     font: normal 16px "Halant", serif; }
 
+.sub_title {
+  font: normal 20px "Poppins", sans-serif; }
+
 .submit_card {
   font: normal 18px "Halant", serif; }
 
@@ -396,7 +399,11 @@ h4 {
     color: #0cb7f2; }
   .modal_description {
     font: normal 18px "Halant", serif;
-    color: #004173; } }
+    color: #004173; }
+  .sub_title {
+    font: normal 16px "Poppins", sans-serif; }
+  .title_h1 {
+    font: normal 20px "Poppins", sans-serif; } }
 
 .popup {
   width: 100%;
@@ -1170,7 +1177,7 @@ td {
 .container_pago {
   background-color: #dcdcdc;
   width: 100vw;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1191,12 +1198,20 @@ td {
   padding: 2px;
   height: 30px; }
 
-.email_number {
-  display: flex; }
-
 .boton_pago {
   width: 100%;
   margin: 5px; }
+
+.titles_pago {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.email_number {
+  display: flex; }
 
 .formulario_pago {
   margin-top: 110px;
@@ -1211,6 +1226,16 @@ td {
   padding: 10px;
   display: flex;
   justify-content: space-around; }
+
+@media (max-width: 768px) {
+  .formulario_pago {
+    margin-top: 110px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 100%; }
+  .titles_pago {
+    height: 100%;
+    margin-bottom: 30px; } }
 
 *,
 *:before,

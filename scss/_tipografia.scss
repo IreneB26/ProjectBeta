@@ -62,6 +62,8 @@ color: $detail;
   color: $color_principal;
 }
 
+
+
 .label {
   font: bolde 16px $titulos;
   color: $color_principal;
@@ -101,6 +103,11 @@ color: $detail;
     font: normal 16px $texto;
   }
 }
+
+.sub_title{
+  font: normal 20px $titulos;
+}
+
 
 .submit_card {
   font: normal 18px $texto;
@@ -278,5 +285,13 @@ color: $detail;
   .modal_description{
     font: normal 18px $texto;
     color: $color_principal;
+  }
+
+  .sub_title{
+    font: normal 16px $titulos;
+  }
+
+  .title_h1{
+    font: normal 20px $titulos;
   }
 }

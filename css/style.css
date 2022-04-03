@@ -1061,15 +1061,17 @@ td {
 .button_quitar:hover {
   color: #0cb7f2; }
 
-.hr_title_cart {
+.hr_cart {
+  width: 85%; }
+
+.header_cart {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-top: 10%;
   flex-direction: column; }
-
-.hr_cart {
-  width: 85%; }
 
 .tabla_carrito {
   margin-top: 15%;

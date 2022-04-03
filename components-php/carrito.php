@@ -134,9 +134,9 @@ if (!empty($_GET)) {
     }
 } else {
     echo ' <button class="close" href="javascript:void(0)" onclick="cerrarCarrito();"> <i class="fas fa-times fa-lg icon"></i> </button>';
-    echo "<div>";
+    echo "<div class='header_cart'";
     echo "<h2><a class='titulo_carrito' href='./index.php#section3' > Tu carrito esta vacio</a></h2>";
-    echo "<hr>";
+    echo "<hr class='hr_cart' >";
     echo "</div>";
 }
 ?>

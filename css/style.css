@@ -1317,7 +1317,8 @@ input:focus {
   cursor: pointer;
   color: #004173;
   background-color: white;
-  transform: translate(-10px, 0px); }
+  transform: translate(-10px, 0px);
+  text-align: center; }
 
 .form_submit:hover {
   border: 3px solid #004173; }

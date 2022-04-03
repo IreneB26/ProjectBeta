@@ -111,10 +111,13 @@ input:focus {
   color: $color_principal;
   background-color: white;
   transform: translate(-10px, 0px);
+  text-align: center;
 }
 .form_submit:hover {
   border: 3px solid $color_principal;
 }
+
+
 
 @media (max-width: 768px) {
   .header_img {

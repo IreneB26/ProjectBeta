@@ -66,7 +66,7 @@ if (!empty($_GET)) {
             echo ' <button class="close" href="javascript:void(0)" onclick="cerrarCarrito();"> <i class="fas fa-times fa-lg icon"></i> </button>';
 
 
-            echo '<table class="tabla_carrito">
+            echo ' <table class="tabla_carrito">
 
             <tr>
 
@@ -82,7 +82,8 @@ if (!empty($_GET)) {
                 if ($carrito_mio[$i] != NULL) {
 
 
-
+                    echo $carrito_mio[$i]['cantidad'];
+                    echo $cantidad;
 
 ?>
 
@@ -110,9 +111,9 @@ if (!empty($_GET)) {
 
             ?>
 
-
-
             </table>
+
+
 
 
 

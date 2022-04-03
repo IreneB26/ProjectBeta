@@ -28,9 +28,11 @@ include('components-php/header.php');
         include("./components-php/busca_evento.php");
         ?>
 
+
+
     </section>
 
-
+    <div class="result"></div>
     <!-- -------------------------- -->
 
     <section class="section2">

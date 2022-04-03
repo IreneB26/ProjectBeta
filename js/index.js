@@ -126,8 +126,30 @@ function navbarScroll() {
 }
 
 
+// buscador 
 
 
+
+
+$(document).ready(function () {
+  $('#txtbusca').focus()
+
+  $('#txtbusca').on('keyup', function () {
+    var search = $('#txtbusca').val()
+    $.ajax({
+      type: 'POST',
+      url: './components-php/search.php',
+      data: { 'search': search }
+
+    })
+      .done(function (resultado) {
+        $('.section3').html(resultado)
+      })
+      .fail(function () {
+        alert('hubo un error');
+      })
+  })
+})
 
 
 

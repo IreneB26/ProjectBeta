@@ -61,6 +61,22 @@ function pago(pago) {
 
 }
 
+function pagoRealizado() {
+
+    var ruta = 'index.php'
+
+    Swal.fire({
+        icon: 'success',
+        title: 'Ha realizado el pago correctamente',
+        text: 'Se le enviaran las entradas por correo',
+        footer: '<a href="./index.php">si tiene algún problema contactenos</a>'
+    }).then(function () {
+        window.location = ruta;
+    });
+
+
+}
+
 
 
 

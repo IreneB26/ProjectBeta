@@ -56,7 +56,7 @@ $precio = $_REQUEST['precio'];
             <label class="label_pago label " for="mensaje">Tarjeta</label>
             <input class="input_pago input" type="password" name="clave" placeholder="Password">
         </div>
-        <input class="boton_pago submit_card" type="submit" value="Pagar €<?php echo $precio; ?>" name="submit">
+        <input class="boton_pago submit_card" type="button" value="Pagar €<?php echo $precio; ?>" onclick="pagoRealizado()" name="submit">
     </form>
 
 

@@ -66,6 +66,18 @@ if (!empty($_GET)) {
             echo ' <button class="close" href="javascript:void(0)" onclick="cerrarCarrito();"> <i class="fas fa-times fa-lg icon"></i> </button>';
 
 
+            echo '<table class="tabla_carrito">
+
+            <tr>
+
+                <td class="product">Producto</td>
+
+                <td class="cantidad">Cantidad</td>
+
+                <td class="precio">Precio</td>
+
+            </tr>';
+
             for ($i = 0; $i <= count($carrito_mio) - 1; $i++) {
                 if ($carrito_mio[$i] != NULL) {
 
@@ -75,37 +87,20 @@ if (!empty($_GET)) {
 ?>
 
 
-                    <table class="tabla_carrito">
 
-                        <tr>
 
-                            <td>Producto</td>
+                    <tr>
 
-                            <td>Cantidad</td>
+                        <td class="product"> <?php echo $carrito_mio[$i]['nombre']; ?> </td>
 
-                            <td>Precio</td>
+                        <td class="cantidad"> <?php echo $carrito_mio[$i]['cantidad'];  ?> </td>
 
-                        </tr>
+                        <td class="precio">€ <?php echo $carrito_mio[$i]['cantidad'] * $carrito_mio[$i]['precio']; ?> </td>
 
-                        <tr>
-
-                            <td> <?php echo $carrito_mio[$i]['nombre']; ?> </td>
-
-                            <td> <?php echo $carrito_mio[$i]['cantidad'];  ?> </td>
-
-                            <td>€ <?php echo $carrito_mio[$i]['cantidad'] * $carrito_mio[$i]['precio']; ?> </td>
-
-                        </tr>
-
-                        <tr>
+                    </tr>
 
 
 
-                            <td> <?php echo  $carrito_mio[$i]['precio']  ?> </td>
-
-                        </tr>
-
-                    </table>
 
             <?php
                 }
@@ -117,6 +112,7 @@ if (!empty($_GET)) {
 
 
 
+            </table>
 
 
 

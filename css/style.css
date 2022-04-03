@@ -1076,6 +1076,15 @@ td {
   width: 100%;
   padding: 10px; }
 
+.product {
+  width: 50%; }
+
+.cantidad {
+  width: 25%; }
+
+.precio {
+  width: 25%; }
+
 @media (max-width: 768px) {
   .carrito {
     width: 100vw; }

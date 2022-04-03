@@ -65,21 +65,20 @@ if (!empty($_GET)) {
 
             echo ' <button class="close" href="javascript:void(0)" onclick="cerrarCarrito();"> <i class="fas fa-times fa-lg icon"></i> </button>';
 
-            echo '<a href="./components-php/borrar_carrito.php">borrar carrito</a>
-            ';
+            // echo '<a href="./components-php/borrar_carrito.php">borrar carrito</a>';
 
 
             echo ' <table class="tabla_carrito">
 
             <tr>
 
-                <td class="product">Producto</td>
+                <td class="product cabecera_carrito">Producto</td>
 
-                <td class="cantidad">Cantidad</td>
+                <td class="cantidad cabecera_carrito">Cantidad</td>
 
-                <td class="precio">Precio</td>
+                <td class="precio cabecera_carrito">Precio</td>
 
-            </tr>';
+            </tr> ';
 
             for ($i = 0; $i <= count($carrito_mio) - 1; $i++) {
                 if ($carrito_mio[$i] != NULL) {
@@ -92,15 +91,16 @@ if (!empty($_GET)) {
 
 
 
-                    <tr>
+                    <tr class="info_cart">
 
-                        <td class="product"> <?php echo $carrito_mio[$i]['nombre']; ?> </td>
+                        <td class="product contenido_carrito"> <?php echo $carrito_mio[$i]['nombre']; ?> </td>
 
-                        <td class="cantidad"> <?php echo $carrito_mio[$i]['cantidad'];  ?> </td>
+                        <td class="cantidad contenido_carrito"> <?php echo $carrito_mio[$i]['cantidad'];  ?> </td>
 
-                        <td class="precio">€ <?php echo $carrito_mio[$i]['cantidad'] * $carrito_mio[$i]['precio']; ?> </td>
+                        <td class="precio contenido_carrito">€ <?php echo $carrito_mio[$i]['cantidad'] * $carrito_mio[$i]['precio']; ?> </td>
 
                     </tr>
+
 
 
 

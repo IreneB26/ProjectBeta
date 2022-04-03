@@ -332,12 +332,12 @@ h4 {
   font: bold 30px "Poppins", sans-serif;
   color: white; }
 
-th {
-  font: bold 20px "Poppins", sans-serif;
+.cabecera_carrito {
+  font: bold 18px "Poppins", sans-serif;
   color: #0cb7f2; }
 
-td {
-  font: normal 20px "Halant", serif;
+.contenido_carrito {
+  font: normal 18px "Halant", serif;
   color: white; }
 
 .button_quitar {
@@ -1070,8 +1070,15 @@ td {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
   flex-direction: column; }
+
+.contenido_carrito {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.cabecera_carrito {
+  color: #0cb7f2; }
 
 .tabla_carrito {
   margin-top: 15%;

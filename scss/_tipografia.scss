@@ -179,15 +179,16 @@ color: $detail;
   color: white;
 }
 
-th{
-  font: bold 20px $titulos;
+.cabecera_carrito{
+  font: bold 18px $titulos;
   color: $detail;
 }
 
-td{
-  font: normal 20px $texto;
+.contenido_carrito{
+  font: normal 18px $texto;
   color: white;
 }
+
 
 .button_quitar{
   font: bold 20px $titulos;

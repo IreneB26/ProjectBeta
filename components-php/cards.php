@@ -52,6 +52,7 @@ if (mysqli_num_rows($result) > 0) {
 
         <figure style="background-image:url('imagenes/<?php echo "$imagen"; ?>');" class="bg_card">
 
+
             <?php session_start();
             if (isset($_SESSION['user'])) { ?><form class="form_card" method="post" action="./components-php/carrito.php?action=add&id=<?php echo "$id"; ?>"><?php } else {
                                                                                                                                                                 echo '<form class="form_card"  method="post" action="./inicio_sesion.php">';
@@ -79,7 +80,7 @@ if (mysqli_num_rows($result) > 0) {
                     <input class="input_card" id="cantidad" type="number" name="quantity" min="1" value="1" placeholder="Número de entradas">
                     <div class="contain_form_buttons">
                         <?php if (isset($_SESSION['user'])) { ?>
-                            <button type="button" name="add_to_cart" class="submit_card" href=" javascript:void(0);" onclick='carritos(<?php echo $row["id"]  ?> )'>comprar</button>
+                            <button type="button" name="add_to_cart" class="submit_card" href=" javascript:void(0);" onclick=' carritos(<?php echo $row["id"]  ?> )'>comprar</button>
 
                         <?php } else {
                             echo '  <a class="submit_card" href="./inicio_sesion.php">comprar </a>';

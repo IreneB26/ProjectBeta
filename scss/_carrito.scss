@@ -83,9 +83,19 @@ td{
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
   flex-direction: column;
   
+}
+
+.contenido_carrito{
+ padding-top: 10px;
+ padding-bottom: 10px;
+
+}
+
+.cabecera_carrito{
+  color: $detail;
 }
 
 

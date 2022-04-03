@@ -1077,6 +1077,15 @@ td {
   padding-top: 10px;
   padding-bottom: 10px; }
 
+.position_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.position_cart {
+  width: 90%; }
+
 .cabecera_carrito {
   color: #0cb7f2; }
 
@@ -1157,6 +1166,51 @@ td {
     @media screen and (max-width: 767px) {
       .faq .question {
         font-size: 18px; } }
+
+.container_pago {
+  background-color: #dcdcdc;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.label_pago {
+  width: 25%;
+  margin: 5px; }
+
+.input_pago {
+  width: 100%;
+  margin: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #004173;
+  border: none;
+  padding: 2px;
+  height: 30px; }
+
+.email_number {
+  display: flex; }
+
+.boton_pago {
+  width: 100%;
+  margin: 5px; }
+
+.formulario_pago {
+  margin-top: 110px;
+  margin-bottom: 50px;
+  width: 60%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around; }
 
 *,
 *:before,

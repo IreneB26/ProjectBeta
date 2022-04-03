@@ -94,6 +94,19 @@ td{
 
 }
 
+.position_button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position_cart{
+  width: 90%;
+}
+
+
+
 .cabecera_carrito{
   color: $detail;
 }

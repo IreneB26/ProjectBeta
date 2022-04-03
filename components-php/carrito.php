@@ -30,7 +30,7 @@ if (!empty($_GET)) {
                     $producto = $_REQUEST['producto'];
                     $cantidad = $_REQUEST['cantidad'];
 
-
+                    $id = $row["id"];
 
 
                     $nombre = $row["name"];
@@ -78,7 +78,10 @@ if (!empty($_GET)) {
 
                 <td class="precio cabecera_carrito">Precio</td>
 
-            </tr> ';
+            </tr>    
+       ';
+
+
 
             for ($i = 0; $i <= count($carrito_mio) - 1; $i++) {
                 if ($carrito_mio[$i] != NULL) {
@@ -106,6 +109,8 @@ if (!empty($_GET)) {
 
 
             <?php
+
+                    $precio = $carrito_mio[$i]['precio'];
                 }
             }
 
@@ -115,6 +120,12 @@ if (!empty($_GET)) {
 
             </table>
 
+
+            <div class="position_button">
+                <button type="button" class="ver_mas position_cart" href="javascript:void(0)" onclick='pago(<?php echo $precio; ?>)'>borrar carrito</button>
+
+
+            </div>
 
 
 

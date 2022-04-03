@@ -52,6 +52,18 @@ function cerrarCarrito() {
 }
 
 
+
+function pago(pago) {
+
+    var ruta = 'pago.php?precio=' + pago;
+
+    window.location.assign(ruta);
+
+}
+
+
+
+
 // card.addEventListener("click", () => {
 //     body.style.overflow = 'hidden';
 

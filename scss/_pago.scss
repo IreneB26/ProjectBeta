@@ -1,0 +1,62 @@
+.container_pago{
+    background-color: $text_grey;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-direction: column;
+}
+
+
+
+.label_pago{
+    width: 25%;
+    margin: 5px;
+}
+
+.input_pago{
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+
+    
+    border-radius: 5px;
+    color: $color_principal;
+    border: none;
+    padding: 2px;
+    height: 30px;
+
+    
+    
+
+}
+
+.email_number{
+    display: flex;
+}
+
+.boton_pago{
+    width: 100%;
+    margin: 5px;
+}
+
+
+
+.formulario_pago{
+    margin-top:110px;
+    margin-bottom:50px;
+
+width: 60%;
+height: 100%;
+border: 2px solid white;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px;
+display: flex;
+    justify-content: space-around;
+}
+

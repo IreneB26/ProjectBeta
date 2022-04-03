@@ -31,7 +31,7 @@ $precio = $_REQUEST['precio'];
         <div class="titles_pago">
             <h1 class="title_h1">Método de pago</h1>
 
-            <p class="sub_title">Introduzca sus detos para ejecutar el pago</p>
+            <p class="sub_title">Introduzca sus datos para ejecutar el pago</p>
 
         </div>
         <div>

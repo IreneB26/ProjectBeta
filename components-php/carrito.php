@@ -71,7 +71,10 @@ if (!empty($_GET)) {
 
 
 
+
 ?>
+
+
                     <table class="tabla_carrito">
 
                         <tr>

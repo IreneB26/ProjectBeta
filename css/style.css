@@ -1071,6 +1071,11 @@ td {
 .hr_cart {
   width: 85%; }
 
+.tabla_carrito {
+  margin-top: 15%;
+  width: 100%;
+  padding: 10px; }
+
 @media (max-width: 768px) {
   .carrito {
     width: 100vw; }

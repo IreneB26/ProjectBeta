@@ -100,6 +100,15 @@ background-size: cover;
   display: flex;
   border-radius: 8px;
 
+  left: 100%;
+  transition: left 0.9s;
+  z-index: 4;
+
+}
+
+
+.modal_visible{
+  left: 8%;
 }
 
 .popup_after{

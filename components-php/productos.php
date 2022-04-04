@@ -76,7 +76,9 @@ if (mysqli_num_rows($result) > 0) {
 
                     <div class="parafos_card">
                         <p class="title_card"><?php echo $row["name"] ?></p>
-                        <p> <?php echo $row["lugar"] . ", " . $row["fecha"] ?></p>
+                        <p> <?php echo $row["lugar"] ?></p>
+                        <p> <?php echo $row["fecha"] ?></p>
+
                         <p>€ <?php echo $row["price"]; ?></p>
 
 

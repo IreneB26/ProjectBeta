@@ -38,22 +38,42 @@ display: block;
 .img_modal{
 height: 100%;
 width: 45%;
-background-color: red;
+// background-color: red;
 border-top-left-radius: 8px;
 border-bottom-left-radius: 8px;
+
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 
 }
 
 .info_modal{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   flex-direction: column;
   width: 55%;
   text-align: center;
   padding: 10px;
   
 }
+
+.tittle_modal{
+  margin-bottom: 8%;
+}
+
+.button_modal{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+
 .contain_but{
   width: 100%;
   height: 10%;
@@ -66,6 +86,8 @@ border-bottom-left-radius: 8px;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+
+ 
 }
 
 .modal{
@@ -101,6 +123,12 @@ border-bottom-left-radius: 8px;
 }
 .close:hover {
   border: 2px solid $color_principal;
+}
+
+.modal_description{
+  height: 70%;
+  text-align: initial;
+	overflow-y: scroll;
 }
 
 .img_popup {

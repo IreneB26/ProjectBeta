@@ -4,10 +4,9 @@
         <h1 class="footer_title">Siguenos en nuestras redes sociales</h1>
 
         <ul class="list_social">
-            <li class="social"><a class="visited" href="https://github.com/IreneB26/project_beta" target="_blank">linkedin</a></li>
-            <li class="social"><a class="visited"> Facebook</a></li>
-            <li class="social"><a class="visited"> twitter</a></li>
-            <li class="social"><a class="visited"> twitter</a></li>
+            <li class="social"><a herf="#" class="visited" target="_blank"> <i class="fab fa-linkedin-in"></i></a></li>
+            <li class="social"><a herf="#" class="visited" target="_blank"> <i class="fab fa-instagram"></i> </a></li>
+            <li class="social"><a herf="#" class="visited" target="_blank"> <i class="fab fa-twitter"></i></a></li>
 
         </ul>
 

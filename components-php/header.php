@@ -77,7 +77,7 @@
 
 
 
-    <li class="nav-menu-item"><a href="#3" class="nav-menu-link icon_carrito">Carrito</a></li>
+    <li class="nav-menu-item"><a href="#3" class="nav-menu-link icon_carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 
 
 

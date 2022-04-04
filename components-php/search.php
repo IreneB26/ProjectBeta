@@ -12,7 +12,7 @@ function search()
     $resultado = $link->query($query);
     while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) {
 
-        $imagen = $row['imagen'];
+        $imagen = $row['image'];
         $id = $row['id'];
 
 

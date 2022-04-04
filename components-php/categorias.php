@@ -7,7 +7,7 @@ $link = Conectarse();
 $result = mysqli_query($link, "SELECT * FROM categoria");
 
 // titulo
-echo "<h1>Categorias</h1>";
+echo "<h1>Categorías</h1>";
 echo "<ul class='contain_cat'>
         <li class='cat'><a class='btn2 button_cat' href=''> Todos</a></li>";
 

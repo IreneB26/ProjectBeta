@@ -17,13 +17,33 @@ function mostrarDetalles(id) {
     var ruta = 'components-php/modal.php?info=' + id;
 
     $.get(ruta, function (data) {
+
+
         $(".pop").html(data);
         $("body").addClass("scroll_hidden");
-        $(".modal").addClass("modal_visible");
-    });
 
+
+
+    })
+    // .then(function () {
+
+    //     $(".modal").addClass("modal_visible");
+
+    // });
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function volverIndex() {
@@ -48,7 +68,7 @@ function carritos(id) {
         $(".carrito").html(data);
         $(".carrito").addClass("carrito_visible");
 
-    });
+    })
 }
 
 function cerrarCarrito() {

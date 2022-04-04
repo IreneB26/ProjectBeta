@@ -85,6 +85,13 @@ color: $detail;
   font-weight: 500;
 }
 
+.a_registro_2 {
+  font: normal 20px $texto;
+  color: $detail;
+  // font-weight: 800;
+}
+
+
 .link_legal_a_incio_sesion {
   font: normal 20px $texto;
   color: white;
@@ -215,11 +222,17 @@ color: $detail;
 .question{
   font: bold 20px $titulos;
   color: $detail;
+  
 }
 
 .answer{
   font: normal 18px $texto;
   color: $color_principal;
+}
+
+.sub_title{
+  font: normal 20px $titulos;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -292,6 +305,6 @@ color: $detail;
   }
 
   .title_h1{
-    font: normal 20px $titulos;
+    font: normal 25px $titulos;
   }
 }

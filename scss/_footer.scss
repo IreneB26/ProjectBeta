@@ -43,7 +43,7 @@
 }
 
 .formulario {
-  width: 50%;
+  width: 60%;
   height: 90%;
   background-color: $text_grey;
   border-radius: 5px;
@@ -63,10 +63,15 @@
 .input {
   display: block;
   width: 70%;
-  border-radius: 5px;
+  border-radius: 0px;
   color: $color_principal;
-  border: none;
+  background-color: $text_grey;
   padding: 2px;
+
+  border:none;
+  border-bottom: 1px solid $color_principal;
+  padding: 5px 10px;
+  outline: none;
 }
 
 .input::placeholder {
@@ -95,8 +100,8 @@ input:focus {
 
 .legal {
   width: 100vw;
-  height: 7vh;
-  background-color: white;
+  height: 100%;
+  background-color: #0cb7f2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,7 +134,7 @@ input:focus {
 }
 
 .link_legal_a:hover {
-  color: $detail;
+  color: $text_grey;
 }
 
 .footer_logo{

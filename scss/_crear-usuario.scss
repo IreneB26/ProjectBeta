@@ -12,6 +12,19 @@
   // background-size: cover;
 }
 
+.input_sesion_crear {
+  margin-bottom: 5px;
+  padding: 10px;
+
+background-color: #00417300;
+caret-color: $color_principal;
+
+  border:none;
+  border-bottom: 1px solid $color_principal;
+  padding: 5px 10px;
+  outline: none;
+}
+
 .crear_usuario::before {
   content: "";
   position: absolute;
@@ -28,6 +41,21 @@
   
 
 }
+
+
+
+.a_registro_2 {
+ 
+  text-decoration-color: $color_principal;
+  padding: 5px;
+}
+
+.a_registro_2:hover {
+  text-decoration: underline;
+}
+
+
+
 
 .formulario_crear_us{
   width: 35vw;
@@ -86,6 +114,7 @@
     height: 15vh;
     padding: 20px;
   }
+
 
 }
 

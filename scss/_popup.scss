@@ -100,16 +100,17 @@ background-size: cover;
   display: flex;
   border-radius: 8px;
 
-  left: 100%;
-  transition: left 0.9s;
-  z-index: 4;
+  // opacity: 0;
+  // transition: opacity 0.9s;
+   z-index: 4;
 
 }
 
 
-.modal_visible{
-  left: 8%;
-}
+
+// .modal_visible{
+//   opacity: 1;
+// }
 
 .popup_after{
   position: absolute;

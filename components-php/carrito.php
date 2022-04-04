@@ -122,7 +122,7 @@ if (!empty($_GET)) {
 
 
             <div class="position_button">
-                <button type="button" class="ver_mas position_cart" href="javascript:void(0)" onclick='pago(<?php echo $precio; ?>)'>borrar carrito</button>
+                <button type="button" class="ver_mas position_cart" href="javascript:void(0)" onclick='pago(<?php echo $precio; ?>)'>Finalzar pago</button>
 
 
             </div>

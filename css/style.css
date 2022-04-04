@@ -262,6 +262,10 @@ h4 {
   color: #0cb7f2;
   font-weight: 500; }
 
+.a_registro_2 {
+  font: normal 20px "Halant", serif;
+  color: #0cb7f2; }
+
 .link_legal_a_incio_sesion {
   font: normal 20px "Halant", serif;
   color: white; }
@@ -363,6 +367,10 @@ h4 {
   font: normal 18px "Halant", serif;
   color: #004173; }
 
+.sub_title {
+  font: normal 20px "Poppins", sans-serif;
+  color: white; }
+
 @media (max-width: 768px) {
   h1 {
     font: bold 40px "Poppins", sans-serif; }
@@ -403,7 +411,7 @@ h4 {
   .sub_title {
     font: normal 16px "Poppins", sans-serif; }
   .title_h1 {
-    font: normal 20px "Poppins", sans-serif; } }
+    font: normal 25px "Poppins", sans-serif; } }
 
 .popup {
   width: 100%;
@@ -453,7 +461,8 @@ h4 {
 .inf_card {
   min-width: 35%;
   max-width: 50%;
-  height: 75%;
+  min-height: 75%;
+  max-height: 75%;
   background-color: white;
   padding: 15px;
   display: flex;
@@ -479,22 +488,6 @@ h4 {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-
-.input_card {
-  width: 100%;
-  height: 35px;
-  border: none;
-  background-color: #dcdcdc;
-  border-radius: 5px;
-  padding: 5px;
-  color: #004173; }
-
-.input_card::placeholder {
-  color: #004173;
-  opacity: 0.3; }
-
-.input_card:focus {
-  color: #004173; }
 
 .submit_card {
   width: 50%;
@@ -535,7 +528,8 @@ h4 {
   .inf_card {
     min-width: 90%;
     max-width: 90%;
-    height: 70%;
+    min-height: 75%;
+    max-height: 80%;
     margin-left: 0px; }
   .form_card {
     width: 90%;
@@ -581,7 +575,7 @@ h4 {
   justify-content: center; }
 
 .formulario {
-  width: 50%;
+  width: 60%;
   height: 90%;
   background-color: #dcdcdc;
   border-radius: 5px;
@@ -599,10 +593,14 @@ h4 {
 .input {
   display: block;
   width: 70%;
-  border-radius: 5px;
+  border-radius: 0px;
   color: #004173;
+  background-color: #dcdcdc;
+  padding: 2px;
   border: none;
-  padding: 2px; }
+  border-bottom: 1px solid #004173;
+  padding: 5px 10px;
+  outline: none; }
 
 .input::placeholder {
   color: #004173;
@@ -627,8 +625,8 @@ input:focus {
 
 .legal {
   width: 100vw;
-  height: 7vh;
-  background-color: white;
+  height: 100%;
+  background-color: #0cb7f2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -656,7 +654,7 @@ input:focus {
   margin: 20px; }
 
 .link_legal_a:hover {
-  color: #0cb7f2; }
+  color: #dcdcdc; }
 
 .footer_logo {
   margin-top: 5px; }
@@ -753,12 +751,7 @@ input:focus {
   margin: auto;
   display: flex;
   border-radius: 8px;
-  left: 100%;
-  transition: left 0.9s;
   z-index: 4; }
-
-.modal_visible {
-  left: 8%; }
 
 .popup_after {
   position: absolute;
@@ -824,13 +817,16 @@ input:focus {
   flex-direction: column; }
 
 .input_card {
-  width: 100%;
+  width: 95%;
   height: 35px;
   border: none;
-  background-color: #dcdcdc;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 5px;
-  color: #004173; }
+  color: #004173;
+  border: none;
+  border-bottom: 1px solid #004173;
+  padding: 5px 10px;
+  outline: none; }
 
 .input_card::placeholder {
   color: #004173;
@@ -894,7 +890,13 @@ input:focus {
 
 .input_sesion {
   margin-bottom: 5px;
-  padding: 10px; }
+  padding: 10px;
+  background-color: #00417300;
+  caret-color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px 10px;
+  outline: none; }
 
 .boton_sesion {
   background-color: #0cb7f2;
@@ -912,7 +914,9 @@ input:focus {
   object-fit: cover; }
 
 .a_registro {
-  text-decoration: none; }
+  text-decoration: underline;
+  text-decoration-color: #004173;
+  padding: 5px; }
 
 .a_registro:hover {
   text-decoration: underline; }
@@ -969,6 +973,16 @@ input:focus {
   align-items: center;
   justify-content: center; }
 
+.input_sesion_crear {
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #00417300;
+  caret-color: #004173;
+  border: none;
+  border-bottom: 1px solid #004173;
+  padding: 5px 10px;
+  outline: none; }
+
 .crear_usuario::before {
   content: "";
   position: absolute;
@@ -980,6 +994,13 @@ input:focus {
   left: 0;
   right: 0;
   background-color: #dcdcdcdd; }
+
+.a_registro_2 {
+  text-decoration-color: #004173;
+  padding: 5px; }
+
+.a_registro_2:hover {
+  text-decoration: underline; }
 
 .formulario_crear_us {
   width: 35vw;
@@ -1158,7 +1179,7 @@ td {
       padding-bottom: 25px;
       transition: max-height 0.5s ease, padding-bottom 0.5s ease; }
     .faq li.active .question {
-      color: #808080;
+      color: black;
       transition: color 0.5s ease; }
   .faq .answer {
     line-height: 24px;
@@ -1200,7 +1221,7 @@ td {
         font-size: 18px; } }
 
 .container_pago {
-  background-color: #dcdcdc;
+  background-color: #0cb7f2;
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -1218,9 +1239,12 @@ td {
   margin-bottom: 5px;
   margin-top: 5px;
   padding: 10px;
-  border-radius: 5px;
-  color: #004173;
   border: none;
+  border-bottom: 1px solid #004173;
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 0px;
+  color: #004173;
   padding: 2px;
   height: 30px; }
 
@@ -1231,16 +1255,25 @@ td {
 
 .titles_pago {
   width: 100%;
-  height: 20%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
 
 .email_number {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.email {
+  width: 45%; }
+
+.telf {
+  width: 45%; }
 
 .formulario_pago {
+  background-color: white;
   margin-top: 110px;
   margin-bottom: 50px;
   width: 60%;
@@ -1252,14 +1285,17 @@ td {
   justify-content: center;
   padding: 10px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 50px; }
 
 @media (max-width: 768px) {
   .formulario_pago {
     margin-top: 110px;
     margin-bottom: 50px;
     width: 80%;
-    height: 100%; }
+    height: 100%;
+    padding: 30px;
+    text-align: center; }
   .titles_pago {
     height: 100%;
     margin-bottom: 30px; } }

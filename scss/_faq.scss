@@ -32,8 +32,9 @@ $mobile:"max-width:767px";
         transition: max-height 0.5s ease, padding-bottom 0.5s ease;
       }
       .question {
-        color:$fact-question-color-active;
+        color:black;
         transition:color 0.5s ease;
+       
       }
     }
   }

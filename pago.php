@@ -42,11 +42,19 @@ $precio = $_REQUEST['precio'];
 
         <div class="email_number">
 
-            <label class="label_pago label " for="email">Correo</label>
-            <input class="input_pago input " type="email" name="email" placeholder="EventExperience@events.com">
+            <div class="email">
+                <label class="label_pago label " for="email">Correo</label>
+                <input class="input_pago input " type="email" name="email" placeholder="EventExperience@events.com">
 
-            <label class="label_pago label" for="email">Teléfono</label>
-            <input class="input_pago input " type="email" name="email" placeholder="EventExperience@events.com">
+            </div>
+
+            <div class="telf">
+
+                <label class="label_pago label" for="email">Teléfono</label>
+                <input class="input_pago input " type="email" name="email" placeholder="Introduzca su teléfono">
+
+            </div>
+
 
         </div>
 
@@ -54,7 +62,7 @@ $precio = $_REQUEST['precio'];
 
 
             <label class="label_pago label " for="mensaje">Tarjeta</label>
-            <input class="input_pago input" type="password" name="clave" placeholder="Password">
+            <input class="input_pago input" type="password" name="clave" placeholder="Número de tarjeta">
         </div>
         <input class="boton_pago submit_card" type="button" value="Pagar €<?php echo $precio; ?>" onclick="pagoRealizado()" name="submit">
     </form>

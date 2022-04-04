@@ -66,6 +66,14 @@
 .input_sesion {
   margin-bottom: 5px;
   padding: 10px;
+
+background-color: #00417300;
+caret-color: white;
+
+  border:none;
+  border-bottom: 1px solid white;
+  padding: 5px 10px;
+  outline: none;
 }
 
 .boton_sesion {
@@ -87,7 +95,9 @@
 }
 
 .a_registro {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: $color_principal;
+  padding: 5px;
 }
 
 .a_registro:hover {

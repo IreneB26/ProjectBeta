@@ -32,13 +32,13 @@
 
 
         <label class="label label_sesion_crear" for="email">Correo</label>
-        <input TYPE="text" NAME="correo" class="input input_sesion" required>
+        <input TYPE="text" NAME="correo" class="input input_sesion_crear" required>
 
         <label class="label label_sesion_crear" for="mensaje">Contraseña</label>
-        <INPUT TYPE="password" NAME="clave" class="input input_sesion" required>
+        <INPUT TYPE="password" NAME="clave" class="input input_sesion_crear" required>
 
         <label class="label label_sesion_crear" for="mensaje">Repetir contraseña</label>
-        <INPUT TYPE="password" NAME="clave2" class="input input_sesion" required>
+        <INPUT TYPE="password" NAME="clave2" class="input input_sesion_crear" required>
 
 
 
@@ -57,7 +57,7 @@
 
     <div class="crear_cuenta_us">
 
-        <p class="p_registro user_sesion">¿Ya tienes cuenta? <a class="a_registro" href="inicio_sesion.php">Inicia sesión</a></p>
+        <p class="p_registro user_sesion">¿Ya tienes cuenta? <a class="a_registro_2" href="inicio_sesion.php">Inicia sesión</a></p>
 
     </div>
 

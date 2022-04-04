@@ -50,7 +50,7 @@ if (mysqli_num_rows($result) > 0) {
         ?>
 
 
-        <figure style="background-image:url('imagenes/<?php echo "$imagen"; ?>');" class="bg_card">
+        <figure href=" javascript:void(0);" onclick='mostrarDetalles(<?php echo $row["id"]; ?>)' style="background-image:url('imagenes/<?php echo "$imagen"; ?>');" class="bg_card">
 
 
             <?php session_start();
@@ -98,6 +98,7 @@ if (mysqli_num_rows($result) > 0) {
                 </article>
 
         </figure>
+
         <!-- </div> -->
 
 <?php

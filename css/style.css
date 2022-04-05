@@ -1311,6 +1311,19 @@ td {
 body {
   scroll-behavior: smooth; }
 
+.swal2-styled.swal2-confirm.swalBtnColor {
+  color: #0cb7f2;
+  background-color: #004173; }
+
+.swal2-styled.swal2-confirm.swalBtnColor:focus {
+  box-shadow: 0 0 0 3px #0cb7f2; }
+
+.footer_swal {
+  color: #004173; }
+
+.footer_swal:hover {
+  color: #0cb7f2; }
+
 .scroll_hidden {
   overflow: hidden; }
 

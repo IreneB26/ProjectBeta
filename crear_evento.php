@@ -2,17 +2,56 @@
 include('./components-php/header.php');
 ?>
 
-<form class="formulario_inicio_sesion" method="post" action="components-php/data-php/inicio_dat.php">
 
-    <h1 class="title_footer_form inicio_sesion_title ">Login</h1>
-    <p class="content_footer_form  inicio_sesion_text">Entra y disfruta de todas las opciones de la web</p>
+<div class="container_pago">
 
-    <label class="label label_sesion" for="email">Correo</label>
-    <input class="input input_sesion" type="email" id="email" name="email" placeholder="ticket2you@events.com">
-    <label class="label label_sesion" for="mensaje">Contraseña</label>
-    <input class="input input_sesion" type="password" id="contraseña" name="clave" placeholder="Password">
-    <input class="boton boton_sesion" type="submit" value="Enviar" name="submit">
-</form>
+
+
+    <form class="formulario_pago" method="post" action="">
+
+        <div class="titles_pago">
+            <h1 class="title_h1">Método de pago</h1>
+
+            <p class="sub_title">Introduzca sus datos para ejecutar el pago</p>
+
+        </div>
+        <div>
+            <label class="label_pago label " for="email">Nombre</label>
+            <input class="input_pago input " type="text" name="email" placeholder="Nombre">
+
+        </div>
+
+        <div class="email_number">
+
+            <div class="email">
+                <label class="label_pago label " for="email">Correo</label>
+                <input class="input_pago input " type="email" name="email" placeholder="EventExperience@events.com">
+
+            </div>
+
+            <div class="telf">
+
+                <label class="label_pago label" for="email">Teléfono</label>
+                <input class="input_pago input " type="email" name="email" placeholder="Introduzca su teléfono">
+
+            </div>
+
+
+        </div>
+
+        <div>
+
+
+            <label class="label_pago label " for="mensaje">Tarjeta</label>
+            <input class="input_pago input" type="password" name="clave" placeholder="Número de tarjeta">
+        </div>
+        <input class="boton_pago submit_card" type="button" value="Pagar €<?php echo $precio; ?>" onclick="pagoRealizado()" name="submit">
+    </form>
+
+
+
+
+</div>
 
 <?php
 include('./components-php/footer.php');

@@ -30,6 +30,23 @@ body {
   
 }
 
+.swal2-styled.swal2-confirm.swalBtnColor {
+  color: $detail;
+  background-color: $color_principal;
+}
+
+.swal2-styled.swal2-confirm.swalBtnColor:focus{
+  box-shadow: 0 0 0 3px $detail;
+}
+
+.footer_swal{
+  color: $color_principal;
+}
+
+.footer_swal:hover{
+  color: $detail;
+}
+
 .scroll_hidden{
   overflow: hidden;
 }

@@ -835,6 +835,20 @@ input:focus {
 .input_card:focus {
   color: #004173; }
 
+.input_sesion {
+  margin-bottom: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #00417300;
+  caret-color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px 10px;
+  outline: none; }
+
+.input_sesion::placeholder {
+  color: white; }
+
 .inicio_sesion {
   width: 100vw;
   height: 100vh;
@@ -887,16 +901,6 @@ input:focus {
 
 .label_sesion {
   margin-bottom: 5px; }
-
-.input_sesion {
-  margin-bottom: 5px;
-  padding: 10px;
-  background-color: #00417300;
-  caret-color: white;
-  border: none;
-  border-bottom: 1px solid white;
-  padding: 5px 10px;
-  outline: none; }
 
 .boton_sesion {
   background-color: #0cb7f2;
@@ -1221,7 +1225,6 @@ td {
         font-size: 18px; } }
 
 .container_pago {
-  background-color: #0cb7f2;
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -1279,7 +1282,7 @@ td {
   margin-bottom: 50px;
   width: 60%;
   height: 100%;
-  border: 2px solid white;
+  border: 2px solid #004173;
   border-radius: 5px;
   display: flex;
   flex-direction: column;

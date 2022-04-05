@@ -1,5 +1,5 @@
 .container_pago{
-    background-color: $detail;
+    // background-color: $detail;
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -78,13 +78,13 @@ flex-direction: column;
 
     width: 60%;
     height: 100%;
-    border: 2px solid white;
+    border: 2px solid $color_principal;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-display: flex;
+    display: flex;
     justify-content: space-around;
     padding: 50px;
 

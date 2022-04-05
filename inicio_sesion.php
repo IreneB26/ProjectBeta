@@ -43,9 +43,9 @@
             <p class="content_footer_form  inicio_sesion_text">Entra y disfruta de todas las opciones de la web</p>
 
             <label class="label label_sesion" for="email">Correo</label>
-            <input class="input input_sesion" type="email" id="email" name="email" placeholder="eventexperience@events.com">
+            <input style="color:white;" class="input input_sesion" type="email" id="email" name="email" placeholder="eventexperience@events.com">
             <label class="label label_sesion" for="mensaje">Contraseña</label>
-            <input class="input input_sesion" type="password" id="contraseña" name="clave" placeholder="Password">
+            <input style="color:white;" class="input input_sesion" type="password" id="contraseña" name="clave" placeholder="Password">
             <input class="boton boton_sesion" type="submit" value="Enviar" name="submit">
         </form>
 

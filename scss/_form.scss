@@ -1,0 +1,32 @@
+// form cards events
+
+.form_cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input_card {
+  width: 95%;
+  height: 35px;
+  border: none;
+  // background-color: $text_grey;
+  border-radius: 0px;
+  padding: 5px;
+  color: $color_principal;
+
+  border:none;
+  border-bottom: 1px solid $color_principal;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.input_card::placeholder {
+  color: $color_principal;
+  opacity: 0.3;
+}
+.input_card:focus {
+  color: $color_principal;
+}

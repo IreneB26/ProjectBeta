@@ -1,0 +1,139 @@
+.crear_usuario {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // background-image: url("../imagenes/card.jpg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+}
+
+.input_sesion_crear {
+  margin-bottom: 5px;
+  padding: 10px;
+
+background-color: #00417300;
+caret-color: $color_principal;
+
+  border:none;
+  border-bottom: 1px solid $color_principal;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.crear_usuario::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // background-color: #6d0005dd;
+  background-color: #dcdcdcdd;
+
+  
+
+}
+
+
+
+.a_registro_2 {
+ 
+  text-decoration-color: $color_principal;
+  padding: 5px;
+}
+
+.a_registro_2:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.formulario_crear_us{
+  width: 35vw;
+  height: 50vh;
+  border: 2px solid $color_principal;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.crear_cuenta_us{
+  width: 35vw;
+    height: 15vh;
+    border: 2px solid $color_principal;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.crear_usuario_title {
+  margin-bottom: 10px;
+}
+
+.crear_usuario_text {
+  margin-bottom: 20px;
+}
+
+
+.crear-usuario{
+  width: 13vw;
+  height:13vh;
+}
+
+
+@media (max-width: 950px) {
+  .crear-usuario{
+    width: 12vw;
+    height:12vh;
+    margin-top: 20px;
+  }
+
+  .formulario_crear_us{
+    width: 70vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .crear_cuenta_us{
+    width: 70vw;
+    height: 15vh;
+    padding: 20px;
+  }
+
+
+}
+
+@media (max-width: 700px) {
+  .crear-usuario{
+    width: 14vw;
+    height:14vh;
+    margin-top: 20px;
+  }
+
+
+}
+
+@media (max-width: 700px) {
+  .crear-usuario{
+    width: 20vw;
+    height:20vh;
+    margin-top: 20px;
+  }
+
+
+}

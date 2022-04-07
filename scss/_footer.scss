@@ -1,3 +1,165 @@
 .footer {
-  margin-top: 100px;
+  background-color: $color_principal;
+  width: 100vw;
+  display: flex;
+  padding: 20px;
+}
+
+.footer_iz {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.list_social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.visited {
+  text-decoration: none;
+  color: $text_grey;
+}
+
+.visited:hover {
+  color: $detail;
+}
+
+.social {
+  margin: 30px;
+  list-style: none;
+}
+
+.footer_de {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  width: 60%;
+  height: 90%;
+  background-color: $text_grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.label {
+  display: block;
+  margin: 5px;
+  width: 70%;
+}
+
+.input {
+  display: block;
+  width: 70%;
+  border-radius: 0px;
+  color: $color_principal;
+  background-color: $text_grey;
+  padding: 2px;
+
+  border:none;
+  border-bottom: 1px solid $color_principal;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: $color_principal;
+  opacity: 0.3;
+}
+input:focus {
+  color: $color_principal;
+}
+
+.boton {
+  margin-top: 10px;
+  width: 70%;
+  border: 3px solid $color_principal;
+  color: $color_principal;
+  background-color: $color_principal;
+  color: $grey;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.boton:hover {
+  cursor: pointer;
+  border: 3px solid $detail;
+}
+
+.legal {
+  width: 100vw;
+  height: 100%;
+  background-color: #0cb7f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.empresa {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.pag {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link_legal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.link_legal_a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+.link_legal_a:hover {
+  color: $text_grey;
+}
+
+.footer_logo{
+ margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer_iz {
+    width: 100%;
+  }
+
+  .footer_de {
+    width: 100%;
+  }
+
+  .formulario {
+    width: 75%;
+    height: 90%;
+  }
+
+  .link_legal_a {
+    margin: 0px;
+  }
 }

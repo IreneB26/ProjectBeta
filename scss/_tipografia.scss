@@ -1,6 +1,9 @@
 h1 {
   font: bold 60px $titulos;
+  color: $color_principal;
 }
+
+
 
 a {
   font: bold 20px $titulos;
@@ -9,6 +12,27 @@ a {
 p {
   font: normal 20px $texto;
 }
+h4 {
+  font: bold 30px $titulos;
+  color: $detail;
+}
+
+.text{
+  font: bold 20px $titulos;
+color: $detail;
+}
+
+.modal_description{
+  font: normal 20px $texto;
+  color: $color_principal;
+}
+
+.text_img {
+  font: bold 50px $titulos;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
 
 .form_search::placeholder {
   font: normal 20px $texto;
@@ -16,6 +40,66 @@ p {
 
 .form_submit {
   font: normal 20px $texto;
+}
+
+.footer_title {
+  font: bold 50px $titulos;
+  color: $detail;
+}
+
+.title_footer_form {
+  font: bold 20px $titulos;
+  color: $color_principal;
+}
+
+.content_footer_form {
+  font: normal 16px $texto;
+  color: $color_principal;
+}
+
+.input {
+  font: normal 16px $texto;
+  color: $color_principal;
+}
+
+
+
+.label {
+  font: bolde 16px $titulos;
+  color: $color_principal;
+}
+
+.social {
+  font: normal 20px $texto;
+  color: $text_grey;
+}
+
+.p_registro {
+  font: normal 20px $texto;
+  color: white;
+}
+
+.a_registro {
+  font: normal 20px $texto;
+  color: $detail;
+  font-weight: 500;
+}
+
+.a_registro_2 {
+  font: normal 20px $texto;
+  color: $detail;
+  // font-weight: 800;
+}
+
+
+.link_legal_a_incio_sesion {
+  font: normal 20px $texto;
+  color: white;
+}
+
+.link_legal_a_crear_us{
+  font: normal 20px $texto;
+  color: $color_principal;
 }
 
 // forms cards
@@ -27,17 +111,133 @@ p {
   }
 }
 
+.sub_title{
+  font: normal 20px $titulos;
+}
+
+
 .submit_card {
+  font: normal 18px $texto;
+}
+
+.ver_mas {
+  font: normal 18px $texto;
+}
+
+.desc_event {
   font: normal 16px $texto;
+  color: $color_principal;
+}
+
+.link_legal_a {
+  font: normal 20px $texto;
+  color: $color_principal;
+}
+
+.marca {
+  font: normal 20px $texto;
+  color: $color_principal;
+}
+
+// .logo_incio_sesion {
+//   font: bold 50px $titulos;
+//   color: white;
+// }
+
+.formulario_inicio_sesion {
+  font: normal 20px $texto;
+  color: white;
+}
+
+.inicio_sesion_text {
+  font: normal 20px $texto;
+  color: white;
+}
+
+.crear_usuario_text {
+  font: normal 20px $texto;
+  color: $color_principal;
+}
+
+.inicio_sesion_title {
+  font: bold 20px $titulos;
+  color: white;
+}
+
+.crear_usuario_title {
+  font: bold 20px $titulos;
+  color: $color_principal;
+}
+
+.user_sesion{
+  font: normal 20px $texto;
+  color: $color_principal;
+}
+
+.boton_sesion {
+  font: normal 16px $texto;
+}
+
+.titulo_carrito {
+  font: bold 30px $titulos;
+  color: white;
+}
+
+.titulo_carrito_detalles {
+  font: bold 30px $titulos;
+  color: white;
+}
+
+.logo_mobile{
+  font: bold 30px $titulos;
+  color: white;
+}
+
+.cabecera_carrito{
+  font: bold 18px $titulos;
+  color: $detail;
+}
+
+.contenido_carrito{
+  font: normal 18px $texto;
+  color: white;
+}
+
+
+.button_quitar{
+  font: bold 20px $titulos;
+  color: white;
+}
+
+.label_sesion{
+  font: normal 20px $titulos;
+  color: white;
+}
+
+.label_sesion_crear{
+  font: normal 20px $titulos;
+  color: $color_principal;
+}
+
+.question{
+  font: bold 20px $titulos;
+  color: $detail;
+  
+}
+
+.answer{
+  font: normal 18px $texto;
+  color: $color_principal;
+}
+
+.sub_title{
+  font: normal 20px $titulos;
+  color: white;
 }
 
 @media (max-width: 768px) {
   h1 {
     font: bold 40px $titulos;
-  }
-
-  .content_header {
-    font: normal 16px $texto;
   }
 
   .form_search::placeholder {
@@ -46,5 +246,65 @@ p {
 
   .form_submit {
     font: normal 16px $texto;
+  }
+
+  .link_legal_a_incio_sesion {
+    font: normal 16px $texto;
+    color: white;
+  }
+
+  .link_legal_a_crear_us{
+    font: normal 16px $texto;
+    color: $color_principal;
+  }
+
+  .titulo_carrito {
+    font: bold 20px $titulos;
+  }
+
+  .titulo_carrito_detalles {
+    font: bold 20px $titulos;
+  }
+
+  th{
+    font: bold 16px $titulos;
+    color: white;
+  }
+  .button_quitar{
+    font: bold 16px $titulos;
+  }
+
+  td{
+    font: normal 16px $texto;
+  }
+  .label_sesion{
+    font: normal 16px $titulos;
+  }
+  .label_sesion_crear{
+    font: normal 16px $titulos;
+  }
+
+
+  h4 {
+    font: bold 25px $titulos;
+    color: $detail;
+  }
+  
+  .text{
+    font: bold 20px $titulos;
+  color: $detail;
+  }
+  
+  .modal_description{
+    font: normal 18px $texto;
+    color: $color_principal;
+  }
+
+  .sub_title{
+    font: normal 16px $titulos;
+  }
+
+  .title_h1{
+    font: normal 25px $titulos;
   }
 }

@@ -1,7 +1,7 @@
 # ProjectBeta
 
 
-En esta web puedes el proyecto de una tienda de venta de entradas de eventos. [Visita la web Aquí]([https://ireneb26.github.io/Portfolio/](https://frontend.esatid3-2021.com/ireneb/project-beta/index.php)).
+En esta web puedes el proyecto de una tienda de venta de entradas de eventos. [Visita la web Aquí](https://frontend.esatid3-2021.com/ireneb/project-beta/index.php).
 
 
 ## **Objetivo**
